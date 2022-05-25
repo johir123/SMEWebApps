@@ -46,13 +46,13 @@ Debug
 /packages.rar
 /SMEData/obj/Release
 /SMEService/obj/Release
-/BasicDataAccess/obj/Release
-/SMEWebApps/Properties/PublishProfiles
-/SMEData/obj/Release/SMEData.csproj.FileListAbsolute.txt
 /SMEComon/obj/Debug/SMEComon.csproj.FileListAbsolute.txt
 /SMELib/obj/Debug/SMELib.csproj.FileListAbsolute.txt
 /SMEModel/obj/Debug/SMEModel.csproj.FileListAbsolute.txt
 /SMEUtility/obj/Debug/SMEUtility.csproj.FileListAbsolute.txt
+/BasicDataAccess/obj/Release
+/SMEWebApps/Properties/PublishProfiles
+/SMEData/obj/Release/SMEData.csproj.FileListAbsolute.txt
 /Utility/obj/Release
 Release
 *.txt
