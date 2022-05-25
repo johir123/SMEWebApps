@@ -53,6 +53,7 @@ Debug
 /SMELib/obj/Debug/SMELib.csproj.FileListAbsolute.txt
 /SMEModel/obj/Debug/SMEModel.csproj.FileListAbsolute.txt
 /SMEUtility/obj/Debug/SMEUtility.csproj.FileListAbsolute.txt
+/.vs/SMEWebApps/v17/.suo
 /Utility/obj/Release
 Release
 *.txt
