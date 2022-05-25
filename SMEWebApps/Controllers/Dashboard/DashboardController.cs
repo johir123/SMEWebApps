@@ -16,17 +16,6 @@ namespace SMEWebApps.Controllers
         {
             return View();
         }
-        public ActionResult B()
-        {
-            return View();
-        }
-        public ActionResult C()
-        {
-            return View();
-        }
-        public ActionResult D()
-        {
-            return View();
-        }
+       
     }
 }
