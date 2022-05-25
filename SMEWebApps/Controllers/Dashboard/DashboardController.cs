@@ -16,6 +16,9 @@ namespace SMEWebApps.Controllers
         {
             return View();
         }
-       
+        public ActionResult ALLRRR()
+        {
+            return View();
+        }
     }
 }
