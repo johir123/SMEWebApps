@@ -3,6 +3,7 @@
 *.dll
 *.exe
 *.targets
+*.txt
 /SMEWebApps/bin/roslyn
 /SMEWebApps/bin
 /SMEWebApps/obj/Debug
@@ -55,7 +56,6 @@ Debug
 /SMEData/obj/Release/SMEData.csproj.FileListAbsolute.txt
 /Utility/obj/Release
 Release
-*.txt
 /packages.zip
 PublishProfiles
 *.user
