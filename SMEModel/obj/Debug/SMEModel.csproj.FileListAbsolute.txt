@@ -10,3 +10,9 @@ F:\AAA\SMEWebApps\SMEModel\obj\Debug\SMEModel.csproj.AssemblyReference.cache
 F:\AAA\SMEWebApps\SMEModel\obj\Debug\SMEModel.csproj.CoreCompileInputs.cache
 F:\AAA\SMEWebApps\SMEModel\obj\Debug\SMEModel.dll
 F:\AAA\SMEWebApps\SMEModel\obj\Debug\SMEModel.pdb
+E:\AAA\SMEWebApps\SMEModel\bin\Debug\SMEModel.dll
+E:\AAA\SMEWebApps\SMEModel\bin\Debug\SMEModel.pdb
+E:\AAA\SMEWebApps\SMEModel\obj\Debug\SMEModel.csproj.AssemblyReference.cache
+E:\AAA\SMEWebApps\SMEModel\obj\Debug\SMEModel.csproj.CoreCompileInputs.cache
+E:\AAA\SMEWebApps\SMEModel\obj\Debug\SMEModel.dll
+E:\AAA\SMEWebApps\SMEModel\obj\Debug\SMEModel.pdb
