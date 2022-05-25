@@ -16,7 +16,6 @@ F:\AAA\SMEWebApps\SMEUtility\bin\Debug\SMEUtility.pdb
 F:\AAA\SMEWebApps\SMEUtility\bin\Debug\Elmah.dll
 F:\AAA\SMEWebApps\SMEUtility\bin\Debug\SMEComon.dll
 F:\AAA\SMEWebApps\SMEUtility\bin\Debug\SMEModel.dll
-F:\AAA\SMEWebApps\SMEUtility\bin\Debug\System.Data.SqlServerCe.dll
 F:\AAA\SMEWebApps\SMEUtility\bin\Debug\SMEComon.pdb
 F:\AAA\SMEWebApps\SMEUtility\bin\Debug\SMEModel.pdb
 F:\AAA\SMEWebApps\SMEUtility\obj\Debug\SMEUtility.csproj.AssemblyReference.cache

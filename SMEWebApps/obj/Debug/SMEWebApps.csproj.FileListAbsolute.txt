@@ -159,7 +159,6 @@ F:\AAA\SMEWebApps\SMEWebApps\bin\System.Web.WebPages.Deployment.dll
 F:\AAA\SMEWebApps\SMEWebApps\bin\System.Web.WebPages.dll
 F:\AAA\SMEWebApps\SMEWebApps\bin\System.Web.WebPages.Razor.dll
 F:\AAA\SMEWebApps\SMEWebApps\bin\WebGrease.dll
-F:\AAA\SMEWebApps\SMEWebApps\bin\System.Data.SqlServerCe.dll
 F:\AAA\SMEWebApps\SMEWebApps\bin\SMEComon.pdb
 F:\AAA\SMEWebApps\SMEWebApps\bin\SMELib.pdb
 F:\AAA\SMEWebApps\SMEWebApps\bin\SMEModel.pdb
