@@ -11,3 +11,16 @@ C:\Users\asaf\source\repos\SMEWebApps\SMELib\obj\Debug\SMELib.csproj.CoreCompile
 C:\Users\asaf\source\repos\SMEWebApps\SMELib\obj\Debug\SMELib.csproj.CopyComplete
 C:\Users\asaf\source\repos\SMEWebApps\SMELib\obj\Debug\SMELib.dll
 C:\Users\asaf\source\repos\SMEWebApps\SMELib\obj\Debug\SMELib.pdb
+F:\AAA\SMEWebApps\SMELib\bin\Debug\SMELib.dll
+F:\AAA\SMEWebApps\SMELib\bin\Debug\SMELib.pdb
+F:\AAA\SMEWebApps\SMELib\bin\Debug\Elmah.dll
+F:\AAA\SMEWebApps\SMELib\bin\Debug\SMEComon.dll
+F:\AAA\SMEWebApps\SMELib\bin\Debug\SMEModel.dll
+F:\AAA\SMEWebApps\SMELib\bin\Debug\System.Data.SqlServerCe.dll
+F:\AAA\SMEWebApps\SMELib\bin\Debug\SMEComon.pdb
+F:\AAA\SMEWebApps\SMELib\bin\Debug\SMEModel.pdb
+F:\AAA\SMEWebApps\SMELib\obj\Debug\SMELib.csproj.AssemblyReference.cache
+F:\AAA\SMEWebApps\SMELib\obj\Debug\SMELib.csproj.CoreCompileInputs.cache
+F:\AAA\SMEWebApps\SMELib\obj\Debug\SMELib.csproj.CopyComplete
+F:\AAA\SMEWebApps\SMELib\obj\Debug\SMELib.dll
+F:\AAA\SMEWebApps\SMELib\obj\Debug\SMELib.pdb
