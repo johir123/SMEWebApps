@@ -23,3 +23,15 @@ F:\AAA\SMEWebApps\SMEUtility\obj\Debug\SMEUtility.csproj.CoreCompileInputs.cache
 F:\AAA\SMEWebApps\SMEUtility\obj\Debug\SMEUtility.csproj.CopyComplete
 F:\AAA\SMEWebApps\SMEUtility\obj\Debug\SMEUtility.dll
 F:\AAA\SMEWebApps\SMEUtility\obj\Debug\SMEUtility.pdb
+E:\AAA\SMEWebApps\SMEUtility\bin\Debug\SMEUtility.dll
+E:\AAA\SMEWebApps\SMEUtility\bin\Debug\SMEUtility.pdb
+E:\AAA\SMEWebApps\SMEUtility\bin\Debug\Elmah.dll
+E:\AAA\SMEWebApps\SMEUtility\bin\Debug\SMEComon.dll
+E:\AAA\SMEWebApps\SMEUtility\bin\Debug\SMEModel.dll
+E:\AAA\SMEWebApps\SMEUtility\bin\Debug\SMEComon.pdb
+E:\AAA\SMEWebApps\SMEUtility\bin\Debug\SMEModel.pdb
+E:\AAA\SMEWebApps\SMEUtility\obj\Debug\SMEUtility.csproj.AssemblyReference.cache
+E:\AAA\SMEWebApps\SMEUtility\obj\Debug\SMEUtility.csproj.CoreCompileInputs.cache
+E:\AAA\SMEWebApps\SMEUtility\obj\Debug\SMEUtility.csproj.CopyComplete
+E:\AAA\SMEWebApps\SMEUtility\obj\Debug\SMEUtility.dll
+E:\AAA\SMEWebApps\SMEUtility\obj\Debug\SMEUtility.pdb
