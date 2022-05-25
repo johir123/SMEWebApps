@@ -20,5 +20,9 @@ namespace SMEWebApps.Controllers
         {
             return View();
         }
+        public ActionResult C()
+        {
+            return View();
+        }
     }
 }
