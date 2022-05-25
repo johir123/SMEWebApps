@@ -49,6 +49,10 @@ Debug
 /BasicDataAccess/obj/Release
 /SMEWebApps/Properties/PublishProfiles
 /SMEData/obj/Release/SMEData.csproj.FileListAbsolute.txt
+/SMECommon/obj/Debug/SMECommon.csproj.FileListAbsolute.txt
+/SMELib/obj/Debug/SMELib.csproj.FileListAbsolute.txt
+/SMEModel/obj/Debug/SMEModel.csproj.FileListAbsolute.txt
+/SMEUtility/obj/Debug/SMEUtility.csproj.FileListAbsolute.txt
 /Utility/obj/Release
 Release
 *.txt
