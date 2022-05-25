@@ -24,6 +24,9 @@ namespace SMEWebApps.Controllers
         {
             return View();
         }
-        
+        public ActionResult CB()
+        {
+            return View();
+        }
     }
 }
