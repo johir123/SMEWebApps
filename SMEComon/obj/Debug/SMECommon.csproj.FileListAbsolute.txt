@@ -4,12 +4,6 @@ C:\Users\asaf\source\repos\SMEWebApps\SMEComon\obj\Debug\SMECommon.csproj.Assemb
 C:\Users\asaf\source\repos\SMEWebApps\SMEComon\obj\Debug\SMECommon.csproj.CoreCompileInputs.cache
 C:\Users\asaf\source\repos\SMEWebApps\SMEComon\obj\Debug\SMEComon.dll
 C:\Users\asaf\source\repos\SMEWebApps\SMEComon\obj\Debug\SMEComon.pdb
-F:\AAA\SMEWebApps\SMEComon\bin\Debug\SMEComon.dll
-F:\AAA\SMEWebApps\SMEComon\bin\Debug\SMEComon.pdb
-F:\AAA\SMEWebApps\SMEComon\obj\Debug\SMECommon.csproj.AssemblyReference.cache
-F:\AAA\SMEWebApps\SMEComon\obj\Debug\SMECommon.csproj.CoreCompileInputs.cache
-F:\AAA\SMEWebApps\SMEComon\obj\Debug\SMEComon.dll
-F:\AAA\SMEWebApps\SMEComon\obj\Debug\SMEComon.pdb
 E:\AAA\SMEWebApps\SMEComon\bin\Debug\SMEComon.dll
 E:\AAA\SMEWebApps\SMEComon\bin\Debug\SMEComon.pdb
 E:\AAA\SMEWebApps\SMEComon\obj\Debug\SMECommon.csproj.AssemblyReference.cache

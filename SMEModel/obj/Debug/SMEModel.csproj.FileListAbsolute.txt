@@ -4,9 +4,3 @@ C:\Users\asaf\source\repos\SMEWebApps\SMEModel\obj\Debug\SMEModel.csproj.Assembl
 C:\Users\asaf\source\repos\SMEWebApps\SMEModel\obj\Debug\SMEModel.csproj.CoreCompileInputs.cache
 C:\Users\asaf\source\repos\SMEWebApps\SMEModel\obj\Debug\SMEModel.dll
 C:\Users\asaf\source\repos\SMEWebApps\SMEModel\obj\Debug\SMEModel.pdb
-F:\AAA\SMEWebApps\SMEModel\bin\Debug\SMEModel.dll
-F:\AAA\SMEWebApps\SMEModel\bin\Debug\SMEModel.pdb
-F:\AAA\SMEWebApps\SMEModel\obj\Debug\SMEModel.csproj.AssemblyReference.cache
-F:\AAA\SMEWebApps\SMEModel\obj\Debug\SMEModel.csproj.CoreCompileInputs.cache
-F:\AAA\SMEWebApps\SMEModel\obj\Debug\SMEModel.dll
-F:\AAA\SMEWebApps\SMEModel\obj\Debug\SMEModel.pdb
