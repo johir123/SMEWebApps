@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="QCDS" targetNamespace="http://tempuri.org/QCDS.xsd" xmlns:mstns="http://tempuri.org/QCDS.xsd" xmlns="http://tempuri.org/QCDS.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="QCDS" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="QCDS" msprop:Generator_UserDSName="QCDS">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="QCRpt" msprop:Generator_TableClassName="QCRptDataTable" msprop:Generator_TableVarName="tableQCRpt" msprop:Generator_TablePropName="QCRpt" msprop:Generator_RowDeletingName="QCRptRowDeleting" msprop:Generator_RowChangingName="QCRptRowChanging" msprop:Generator_RowEvHandlerName="QCRptRowChangeEventHandler" msprop:Generator_RowDeletedName="QCRptRowDeleted" msprop:Generator_UserTableName="QCRpt" msprop:Generator_RowChangedName="QCRptRowChanged" msprop:Generator_RowEvArgName="QCRptRowChangeEvent" msprop:Generator_RowClassName="QCRptRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Unit" msprop:Generator_ColumnVarNameInTable="columnUnit" msprop:Generator_ColumnPropNameInRow="Unit" msprop:Generator_ColumnPropNameInTable="UnitColumn" msprop:Generator_UserColumnName="Unit" type="xs:string" minOccurs="0" />
+              <xs:element name="QCDate" msprop:Generator_ColumnVarNameInTable="columnQCDate" msprop:Generator_ColumnPropNameInRow="QCDate" msprop:Generator_ColumnPropNameInTable="QCDateColumn" msprop:Generator_UserColumnName="QCDate" type="xs:string" minOccurs="0" />
+              <xs:element name="Buyer" msprop:Generator_ColumnVarNameInTable="columnBuyer" msprop:Generator_ColumnPropNameInRow="Buyer" msprop:Generator_ColumnPropNameInTable="BuyerColumn" msprop:Generator_UserColumnName="Buyer" type="xs:string" minOccurs="0" />
+              <xs:element name="Style" msprop:Generator_ColumnVarNameInTable="columnStyle" msprop:Generator_ColumnPropNameInRow="Style" msprop:Generator_ColumnPropNameInTable="StyleColumn" msprop:Generator_UserColumnName="Style" type="xs:string" minOccurs="0" />
+              <xs:element name="OrderNo" msprop:Generator_ColumnVarNameInTable="columnOrderNo" msprop:Generator_ColumnPropNameInRow="OrderNo" msprop:Generator_ColumnPropNameInTable="OrderNoColumn" msprop:Generator_UserColumnName="OrderNo" type="xs:string" minOccurs="0" />
+              <xs:element name="OrderPOCnt" msprop:Generator_ColumnVarNameInTable="columnOrderPOCnt" msprop:Generator_ColumnPropNameInRow="OrderPOCnt" msprop:Generator_ColumnPropNameInTable="OrderPOCntColumn" msprop:Generator_UserColumnName="OrderPOCnt" type="xs:string" minOccurs="0" />
+              <xs:element name="PassPoCnt" msprop:Generator_ColumnVarNameInTable="columnPassPoCnt" msprop:Generator_ColumnPropNameInRow="PassPoCnt" msprop:Generator_ColumnPropNameInTable="PassPoCntColumn" msprop:Generator_UserColumnName="PassPoCnt" type="xs:string" minOccurs="0" />
+              <xs:element name="FailPoCnt" msprop:Generator_ColumnVarNameInTable="columnFailPoCnt" msprop:Generator_ColumnPropNameInRow="FailPoCnt" msprop:Generator_ColumnPropNameInTable="FailPoCntColumn" msprop:Generator_UserColumnName="FailPoCnt" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

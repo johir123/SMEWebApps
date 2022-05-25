@@ -1,0 +1,26 @@
+﻿
+ .dvHeader {
+        background: #f44917 none repeat scroll 0 0;
+        height: auto;
+        float: left;
+    }
+
+    /*.row {
+                margin: 0 0 8px 20vw;
+            }*/
+   
+
+    .dvHeader label {
+        display: block;
+        color: #fff;
+    }
+
+.tooltip {
+    z-index: 1151 !important;
+}
+.c-button {
+    border: 0 none !important;
+    color: #fff !important;
+    font-size: 23px !important;
+    float: right;
+}

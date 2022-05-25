@@ -1,0 +1,53 @@
+﻿@using SMECommon
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/__SMELayout.cshtml";
+}
+<script type="text/javascript" src="@Url.Content("~/Content/plugins/jQuery/jQuery-2.1.4.min.js")?@AppSettings.Version"></script>
+<script type="text/javascript" src="@Url.Content("~/CustomContents/Scripts/Report/QCCheck.js")?@AppSettings.Version"></script>
+<div class="content-wrapper">
+    <section class="content-header">
+        <h1>
+            QC
+            <small>QC Check</small>
+        </h1>
+        <ol class="breadcrumb">
+            <li><a href="#"><i class="fa fa-dashboard"></i> QC</a></li>
+            <li><a href="#">QC</a></li>
+            <li class="active">QC Check</li>
+        </ol>
+    </section>
+    <section class="content">
+        <div class="box">
+            <div class="box-header with-border">
+                <div class="row" style="padding-top:5px;">
+                    <div class="col-sm-12 col-md-3 col-lg-2">
+                        <div class="form-group">
+                            <select id="ddlUnitIdRpt" class="form-control"></select>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-3 col-lg-2">
+                        <div class="form-group">
+                            <input type="text" id="txtBuyerIdRpt" data-required="1" placeholder="Enter Buyer..." class="form-control txtcls" />
+                        </div>
+                    </div>
+                    <div class="col-lg-2">
+                        <div class="input-group">
+                            <input id="txtFromDate" type="text" placeholder="Enter From Date..." class="form-control txtcls" autocomplete="off" readonly="readonly" />
+                            <span class="input-group-addon" id="basic-addon2"><i class="fa fa-calendar-o"></i> </span>
+                        </div>
+                    </div>
+                    <div class="col-lg-2">
+                        <div class="input-group">
+                            <input id="txtToDate" type="text" placeholder="Enter To Date..." class="form-control txtcls" autocomplete="off" readonly="readonly" />
+                            <span class="input-group-addon" id="basic-addon2"><i class="fa fa-calendar-o"></i> </span>
+                        </div>
+                    </div>
+                    <div class="col-lg-1">
+                        <button id="btnQCRpt" class="btn btn-primary">Load</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>

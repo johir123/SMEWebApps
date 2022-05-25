@@ -1,0 +1,228 @@
+﻿@using BIMOBComon
+<script type="text/javascript" src="@Url.Content("~/Content/plugins/jQuery/jQuery-2.1.4.min.js")?@AppSettings.Version"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script type="text/javascript" src="@Url.Content("~/Content/bootstrap/js/bootstrap.min.js")?@AppSettings.Version"></script>
+<script type="text/javascript" src="@Url.Content("~/Content/plugins/select2/select2.full.min.js")?@AppSettings.Version"></script>
+<script type="text/javascript" src="@Url.Content("~/Content/plugins/datatables/jquery.dataTables.min.js")?@AppSettings.Version"></script>
+<script type="text/javascript" src="@Url.Content("~/Content/plugins/datatables/dataTables.bootstrap.min.js")?@AppSettings.Version"></script>
+<script type="text/javascript" src="@Url.Content("~/Content/plugins/datatables/dataTables.responsive.min.js")?@AppSettings.Version"></script>
+<script type="text/javascript" src="@Url.Content("~/Content/plugins/datatables/dataTables.rowsGroup.js")?@AppSettings.Version"></script>
+<script type="text/javascript" src="@Url.Content("~/Content/plugins/datatables/dataTables.fixedColumns.min.js")?@AppSettings.Version"></script>
+<script type="text/javascript" src="@Url.Content("~/Content/plugins/fastclick/fastclick.min.js")?@AppSettings.Version"></script>
+<script type="text/javascript" src="@Url.Content("~/Content/dist/js/app.min.js")?@AppSettings.Version"></script>
+<script type="text/javascript" src="@Url.Content("~/Content/dist/js/demo.js")?@AppSettings.Version"></script>
+<script type="text/javascript" src="@Url.Content("~/Content/plugins/iCheck/icheck.min.js")?@AppSettings.Version"></script>
+<script type="text/javascript" src="@Url.Content("~/Content/plugins/daterangepicker/daterangepicker.js")?@AppSettings.Version"></script>
+<script type="text/javascript" src="@Url.Content("~/Content/jquery.growl/javascripts/jquery.growl.js")?@AppSettings.Version"></script>
+@*<script type="text/javascript" src="@Url.Content("~/Content/js/angular.min.js")?@AppSettings.Version"></script>*@
+<script type="text/javascript" src="@Url.Content("~/Content/dist/js/bootstrap-datepicker.js")?@AppSettings.Version"></script>
+<script type="text/javascript" src="@Url.Content("~/CustomContents/Scripts/Utility/List_Item_Paging.js")?@BIMOBComon.AppSettings.Version"></script>
+<script type="text/javascript" src="@Url.Content("~/Content/jquery.mask.js")?@BIMOBComon.AppSettings.Version"></script>
+<script type="text/javascript" src="@Url.Content("~/CustomContents/Scripts/Utility/CustomError.js")?@BIMOBComon.AppSettings.Version"></script>
+<script type="text/javascript" src="@Url.Content("~/CustomContents/Scripts/Dashboard/jquery.easyPaginate.js")?@BIMOBComon.AppSettings.Version"></script>
+<script type="text/javascript" src="@Url.Content("~/Content/bootstrap/js/bootstrap-select.min.js")?@BIMOBComon.AppSettings.Version"></script>
+<script type="text/javascript" src="@Url.Content("~/Content/plugins/TableExport/xlsx.core.min.js")?@BIMOBComon.AppSettings.Version"></script>
+<script type="text/javascript" src="@Url.Content("~/Content/plugins/TableExport/Blob.min.js")?@BIMOBComon.AppSettings.Version"></script>
+<script type="text/javascript" src="@Url.Content("~/Content/plugins/TableExport/FileSaver.min.js")?@BIMOBComon.AppSettings.Version"></script>
+<script type="text/javascript" src="@Url.Content("~/Content/plugins/TableExport/tableexport.js")?@BIMOBComon.AppSettings.Version"></script>
+<script type="text/javascript" src="@Url.Content("~/CustomContents/MISLib/MISPrint/MISPrint.js")?@BIMOBComon.AppSettings.Version"></script>
+<script type="text/javascript" src="@Url.Content("~/CustomContents/Scripts/Common/LoadDropdownValue.js")?@BIMOBComon.AppSettings.Version"></script>
+<script type="text/javascript" src="@Url.Content("~/CustomContents/Scripts/Common/CustomFunctions.js")?@BIMOBComon.AppSettings.Version"></script>
+<script type="text/javascript" src="@Url.Content("~/Content/jquery.arrayUtilities.min.js")?@BIMOBComon.AppSettings.Version"></script>
+@*Kendo Scripts*@
+@*
+<script type="text/javascript" src="@Url.Content("https://code.jquery.com/ui/1.12.1/jquery-ui.js")?@BIMOBComon.AppSettings.Version"></script>
+<script type="text/javascript" src="@Url.Content("~/Scripts/kendo/2017.1.118/kendo.all.min.js")?@BIMOBComon.AppSettings.Version"></script>
+<script type="text/javascript" src="@Url.Content("~/Scripts/kendo/2017.1.118/kendo.aspnetmvc.min.js")?@BIMOBComon.AppSettings.Version"></script>
+<script type="text/javascript" src="@Url.Content("~/Content/Chosen/chosen.jquery.min.js")?@BIMOBComon.AppSettings.Version"></script>
+*@
+
+<script language="javascript" type="text/javascript">
+    var baseURL = "@AppSettings.BaseURL";
+    var baseVersion = "@AppSettings.Version";
+    var G_UserCode = "@BIMOBSessionVar.UserCode";
+    var G_UserName = "@BIMOBSessionVar.UserName";
+    var G_Email = "@BIMOBSessionVar.EMail";
+    var G_EmployeeName = "@BIMOBSessionVar.EmployeeName";
+    var G_EmpImage = "@BIMOBSessionVar.EmpImage";
+    var G_Department = "@BIMOBSessionVar.Department";
+    var G_Designation = "@BIMOBSessionVar.Designation";
+    var G_Unit = "@BIMOBSessionVar.Unit";
+    //var G_RedirectUrl = "@BIMOBSessionVar.RedirectUrl";
+    $(function () {
+        $('.numeric').mask('0000000000');
+
+        if (G_UserCode == "") {
+            window.location.href = baseURL + "/LogIn/Index";
+        }
+        $(".pUserName").text(G_EmployeeName);
+        $(".pDesignation").html(G_EmployeeName + "<small>" + G_Designation + "</small>");
+
+        $("#btnLogout").click(function (e) {
+            e.preventDefault();
+            LogoutUser();
+        });
+        @*if ($("#hdMenu").val() == "") {
+            G_UserCode = "@BIMOBSessionVar.UserCode";
+            if (G_UserCode == "") {
+                window.location.href = baseURL + "/LogIn/Index";
+            }
+            else {
+                BindUserMenu();
+                $("#hdMenu").val("4");
+            }
+        }*@
+        G_UserCode = "@BIMOBSessionVar.UserCode";
+        if (G_UserCode == "") {
+            window.location.href = baseURL + "/LogIn/Index";
+        }
+        else {
+            BindUserMenu();
+            $("#hdMenu").val("4");
+        }
+        //var _pImageSource = baseURL + "/EmpImages/I" + G_UserCode + ".png";
+        var _pImageSource = baseURL + "/EmpImages/" + "@BIMOBSessionVar.ProfileImage";
+        $(".imgProfile").attr("src", _pImageSource);
+
+        $(document).ajaxStart(function () {
+            $("#loading").fadeIn();
+        });
+        $(document).ajaxComplete(function () {
+            $("#loading").fadeOut();
+        });
+        $(document).ajaxError(function () {
+            $("#loading").fadeOut();
+        });
+        $(window).load(function () {
+            $("#loading").fadeOut();
+        });
+        $('.formdate').datepicker({
+            format: 'dd/mm/yyyy',
+        }).on('changeDate', function (e) {
+            $(this).datepicker('hide');
+        });
+        $('.dateCustom').datepicker({
+            format: 'mm/dd/yyyy',
+        }).on('changeDate', function (e) {
+            $(this).datepicker('hide');
+        });
+        //$('#easyPaginate').easyPaginate({
+        //    paginateElement: 'span',
+        //    elementsPerPage: 4,
+        //    effect: 'climb'
+        //});        
+    });    
+    function LogoutUser() {
+        $.ajax({
+            type: "POST",
+            url: baseURL + "/LogIn/LogOutUser",
+            data: {},
+            contentType: "application/json",
+            datatype: "json",
+            success: function (data) {
+                if (data.Success == "True") {
+                    $("#hdMenu").val("");
+                    window.location.href = baseURL + "/Login/Index";
+                }
+                else {
+                    alert('Log Out Failed..!');
+                }
+            }
+        });
+    }
+
+    function BindUserMenu() {
+        $.ajax({
+            type: 'POST',
+            contentType: 'application/json; charset=utf-8',
+            url: baseURL + '/Menu/LoadDashBoardMenu',
+            data: {},
+            global: false,
+            async: true,
+            dataType: 'json',
+            success: function (data) {
+                $("#divDashboardMenu").empty();
+                var _menuList = "<li class='c-dashboard__item treeview'><a target='_blank' href='" + baseURL + "/Dashboard/Index'><i style='margin-right: 16px;font-size: 20px;' class='fa fa-home'></i> <span>Home</span></a></li>";
+                var _menuIcon = "";
+                var _subMenuName = "";
+                var _subMenuList = "";
+                var _subMenuIcon = "";
+                var _count = 0;
+                $.each(data, function (i, item) {//item.MenusId
+                    if (item.MenusId == "26" || item.MenusId == "27" || item.MenusId == "39" || item.MenusId == "40" || item.MenusId == "55") {
+                        item.Url += "?UserCode=" + item.EncryptedUserCode;
+                    }
+                    else {
+                        item.Url = baseURL + item.Url;
+                    }
+                    if (item.ParentMenuId == "-1") {
+                        _menuList += "<li class='c-dashboard__item'><a target='_blank' href='" + item.Url + "'><img src='" + baseURL + item.IconName + "''>  <span>" + item.Title + "</span></a></li>";
+                    }
+                    else if (item.ParentMenuName != "" && _count == 0 && _subMenuName != item.ParentMenuName) {
+                        _subMenuList += "<li class='c-dashboard__item'><a target='_blank' href='" + item.Url + "'><img src='" + baseURL + item.IconName + "''> <span>" + item.Title + "</span></a></li>";
+                        _subMenuName = item.ParentMenuName;
+                        _menuIcon = item.HeadIcon;
+                        _count++;
+                    }
+                    else if (_subMenuName == item.ParentMenuName) {
+                        _subMenuList += "<li class='c-dashboard__item'><a target='_blank' href='" + item.Url + "'><img src='" + baseURL + item.IconName + "''><span>" + item.Title + "</span></a></li>";
+                        _subMenuName = item.ParentMenuName;
+                        _count++;
+                    }
+                    else if (_subMenuName != item.ParentMenuName) {
+                        _menuList += "<li class='c-dashboard__item treeview'><a href='#'><img src='" + baseURL + _menuIcon + "''><span>" + _subMenuName + "</span><i class='fa fa-angle-left pull-right'></i></a><ul class='treeview-menu'>" + _subMenuList + "</ul></li>";
+                        _subMenuList = "";
+                        _subMenuList += "<li class='c-dashboard__item'><a target='_blank' href='" + item.Url + "'><img src='" + baseURL + item.IconName + "''> <span>" + item.Title + "</span></a></li>";
+                        _subMenuName = item.ParentMenuName;
+                        _menuIcon = item.HeadIcon;
+                        _count++;
+                    }
+                });
+                if (_subMenuName != "") {
+                    _menuList += "<li class='c-dashboard__item treeview'><a href='#'><img src='" + baseURL + _menuIcon + "''> <span>" + _subMenuName + "</span><i class='fa fa-angle-left pull-right'></i></a><ul class='treeview-menu'>" + _subMenuList + "</ul></li>";
+                    _subMenuName = "";
+                    _subMenuList = "";
+                    _subMenuIcon = "";
+                }
+                $("#divDashboardMenu").append(_menuList);
+            }
+        });
+    }
+    function ClearDataTable(DataTableName) {
+        var table = $('#' + DataTableName).DataTable();
+        table.clear().draw();
+    }
+    function toggleSelectAll(control) {
+        var allOptionIsSelected = (control.val() || []).indexOf("All") > -1;
+        function valuesOf(elements) {
+            return $.map(elements, function (element) {
+                if (element.value != 'All')
+                    return element.value;
+            });
+        }
+
+        if (control.data('allOptionIsSelected') != allOptionIsSelected) {
+            // User clicked 'All' option
+            if (allOptionIsSelected) {
+                // Can't use .selectpicker('selectAll') because multiple "change" events will be triggered
+                control.selectpicker('val', valuesOf(control.find('option')));
+            } else {
+                control.selectpicker('val', []);
+            }
+        } else {
+            // User clicked other option
+            if (allOptionIsSelected && control.val().length != control.find('option').length) {
+                // All options were selected, user deselected one option
+                // => unselect 'All' option
+                control.selectpicker('val', valuesOf(control.find("option:selected[value!='All']")));
+                allOptionIsSelected = false;
+            } else if (!allOptionIsSelected && control.val().length == control.find('option').length - 1) {
+                // Not all options were selected, user selected all options except 'All' option
+                // => select 'All' option too
+                control.selectpicker('val', valuesOf(control.find('option')));
+                allOptionIsSelected = true;
+            }
+        }
+        control.data('allOptionIsSelected', allOptionIsSelected);
+    }
+</script>

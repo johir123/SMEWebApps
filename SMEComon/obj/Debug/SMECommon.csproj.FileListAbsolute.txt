@@ -1,0 +1,6 @@
+C:\Users\asaf\source\repos\SMEWebApps\SMEComon\bin\Debug\SMEComon.dll
+C:\Users\asaf\source\repos\SMEWebApps\SMEComon\bin\Debug\SMEComon.pdb
+C:\Users\asaf\source\repos\SMEWebApps\SMEComon\obj\Debug\SMECommon.csproj.AssemblyReference.cache
+C:\Users\asaf\source\repos\SMEWebApps\SMEComon\obj\Debug\SMECommon.csproj.CoreCompileInputs.cache
+C:\Users\asaf\source\repos\SMEWebApps\SMEComon\obj\Debug\SMEComon.dll
+C:\Users\asaf\source\repos\SMEWebApps\SMEComon\obj\Debug\SMEComon.pdb

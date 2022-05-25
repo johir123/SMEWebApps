@@ -1,0 +1,221 @@
+﻿@{
+    ViewBag.Title = "Dashboard";
+    Layout = "~/Views/Shared/__SMELayout.cshtml";
+}
+<script type="text/javascript" src="@Url.Content("~/Content/plugins/jQuery/jQuery-2.1.4.min.js")?@SMECommon.AppSettings.Version"></script>
+<script type="text/javascript" src="@Url.Content("~/CustomContents/Scripts/Dashboard/Dashboard.js")?@SMECommon.AppSettings.Version"></script>
+<style type="text/css">
+    .box-header > .fa, .box-header > .glyphicon, .box-header > .ion, .box-header .box-title {
+        color: #334159;
+        display: inline-block;
+        font-family: verdana;
+        font-size: 13px;
+        line-height: 1;
+        margin: 0;
+    }
+
+    .item .product-img .fa {
+        background-color: #334159;
+        border: 2px solid #334159;
+        border-radius: 100%;
+        color: white;
+        font-size: 15px;
+        height: 25px;
+        padding-top: 5px;
+        width: 25px;
+    }
+
+    .widget-user {
+        min-height: 112px;
+    }
+
+    .card-box {
+        background-clip: padding-box;
+        background-color: #ffffff;
+        border-radius: 5px;
+        box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.06), 0 1px 0 0 rgba(0, 0, 0, 0.02);
+        margin-bottom: 20px;
+        padding: 20px;
+    }
+
+    .widget-user .wid-u-info {
+        margin-left: 90px;
+    }
+
+        .widget-user .wid-u-info p, .widget-user .wid-u-info h4 {
+            display: block;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            font-size: 14px;
+        }
+
+    .widget-user img {
+        float: left;
+        height: 72px;
+    }
+
+    .font-600 {
+        font-weight: 600;
+    }
+
+    .m-b-5 {
+        margin-bottom: 5px !important;
+    }
+
+    .m-t-0 {
+        margin-top: 0 !important;
+    }
+
+    .text-muted {
+        color: #98a6ad !important;
+    }
+
+    .font-13 {
+        font-size: 13px !important;
+    }
+
+    .m-b-5 {
+        margin-bottom: 5px !important;
+    }
+
+    .text-muted {
+        color: #777;
+    }
+
+    .text-warning {
+        color: #f9c851 !important;
+    }
+
+    .text-warning {
+        color: #8a6d3b;
+    }
+
+    .small, small {
+        font-size: 85%;
+    }
+
+    #easyPaginate {
+        min-height: 270px;
+        width: 100%;
+    }
+
+        #easyPaginate span {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+    .easyPaginateNav a {
+        padding: 5px;
+    }
+
+        .easyPaginateNav a.current {
+            font-weight: bold;
+            text-decoration: underline;
+        }
+
+    .easyPaginateNav {
+        margin-left: 26px;
+    }
+
+    .fa-lg {
+        font-size: 2.333em;
+        line-height: .75em;
+        vertical-align: 0%;
+        margin-right: 5px;
+    }
+</style>
+<div class="content-wrapper" style="overflow:hidden">
+    <section class="content-header">
+        <h1>
+            Home
+            <small>User Dashboard</small>
+        </h1>
+        <ol class="breadcrumb">
+            <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
+            <li><a href="#">User</a></li>
+            <li class="active">User Dashboard</li>
+        </ol>
+    </section>
+    <section class="content">
+        <div class="row">
+            <div class="col-md-6">
+
+
+                <div class="col-md-12">
+                    <div class="box box-default direct-chat direct-chat-warning">
+                        <div class="box-header with-border">
+                            <h3 class="box-title">Home Dashboard</h3>
+                            <div class="box-tools pull-right">
+                                <button data-widget="collapse" class="btn btn-box-tool"><i class="fa fa-minus"></i></button>
+                                <button data-widget="remove" class="btn btn-box-tool hidden"><i class="fa fa-times"></i></button>
+                            </div>
+                        </div>
+                        <div class="box-body">
+                            <div class="row">
+                                <div class="col-sm-12 col-md-6 col-lg-6">
+                                    <div class="col-sm-12 col-md-12 col-lg-12" style="padding: 5px 0px 5px 15px;">
+                                        <div style="width:250px">
+
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-12 col-md-12 col-lg-12" style="padding: 5px 0px 5px 15px;">
+                                        <div style="width:250px">
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-12 col-md-6 col-lg-6">
+                                    <div class="col-sm-12 col-md-12 col-lg-12" style="padding: 5px 0px 5px 15px;">
+                                        <div style="width:250px">
+
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-12 col-md-12 col-lg-12" style="padding: 5px 0px 5px 15px;">
+                                        <div style="width:250px">
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-12 col-md-6 col-lg-6">
+                                    <div class="col-sm-12 col-md-12 col-lg-12" style="padding: 5px 0px 5px 15px;">
+                                        <div style="width:250px">
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12">
+
+                </div>
+                <div class="col-md-12">
+
+                </div>
+
+            </div>
+            <div class="col-md-6">
+                @*<div class="col-md-12">
+                    @Html.Partial("~/Views/Dashboard/_PreCostingStatus.cshtml")
+                </div>*@
+                
+                <div class="col-md-12">
+                    @*@Html.Partial("~/Views/Dashboard/_Company_Information.cshtml")*@
+                </div>
+                <div class="col-md-12">
+                    @*@Html.Partial("~/Views/Dashboard/_P_User_Directory.cshtml")*@
+                </div>
+                <div class="col-md-12">
+                    @*@Html.Partial("~/Views/Dashboard/_P_Guest_Lunch_Booking.cshtml")*@
+                </div>
+            </div>
+
+        </div>
+      
+
+    </section>
+</div>
+
+

@@ -1,0 +1,170 @@
+﻿@{
+    ViewBag.Title = "Ratio";
+    Layout = "~/Views/Shared/__SMELayout.cshtml";
+}
+<script src="~/Content/js/moment.js"></script>
+<script type="text/javascript" src="@Url.Content("~/Content/plugins/jQuery/jQuery-2.1.4.min.js")?@SMECommon.AppSettings.Version"></script>
+<script type="text/javascript" src="@Url.Content("~/CustomContents/Scripts/MasterEntry/ProducedMin.js")?@SMECommon.AppSettings.Version"></script>
+
+<div class="content-wrapper">
+    <section class="content-header">
+        <h1>
+            Produced Minutes
+        </h1>
+        <ol class="breadcrumb">
+            <li><a href="#"><i class="fa fa-dashboard"></i>Dashboard</a></li>
+            <li><a href="#">Admin</a></li>
+            <li class="active">Produced Minutes</li>
+        </ol>
+    </section>
+    <section class="content">
+        <div class="box">
+            <div class="box-header with-border">
+                <div class="box-tools pull-right">
+                    <button class="btn btn-box-tool" data-widget="collapse" data-toggle="tooltip" title="Collapse"><i class="fa fa-minus"></i></button>
+                </div>
+            </div>
+            <div class="box-body">
+                <div class="col-md-12">
+                    <div id="tblProducedMinutes">
+
+                    </div>
+                </div>
+            </div>
+            <div class="box-footer">
+            </div>
+        </div>
+    </section>
+</div>
+<div id="modalProducedMin" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-content modal-md">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title h3">Produced Minutes</h4>
+            </div>
+            <div id="content" class="modal-body">
+                <div class="row">
+                    <div class="col-sm-12 col-md-6 col-lg-6">
+                        <div class="form-group">
+                            <label for="ddlYear">Year</label>
+                            <select id="ddlYear" class="form-control"></select>
+                            <input type="hidden" id="hdValue" />
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-6">
+                        <div class="form-group">
+                            <label for="ddlMonth">Month</label>
+                            <select id="ddlMonth" class="form-control">
+                                <option value="1">January</option>
+                                <option value="2">February</option>
+                                <option value="3">March</option>
+                                <option value="4">April</option>
+                                <option value="5">May</option>
+                                <option value="6">June</option>
+                                <option value="7">July</option>
+                                <option value="8">August</option>
+                                <option value="9">September</option>
+                                <option value="10">October</option>
+                                <option value="11">November</option>
+                                <option value="12">December</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12 col-md-6 col-lg-6">
+                        <div class="form-group">
+                            <label for="ddlCompany">Factory</label>
+                            <select id="ddlCompany" class="form-control"></select>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-6">
+                        <div class="form-group">
+                            <label for="ddlUnit">Unit</label>
+                            <select id="ddlUnit" class="form-control"></select>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12 col-md-6 col-lg-6">
+                        <div class="form-group">
+                            <label for="ddlUOM">UOM</label>
+                            <select id="ddlUOM" class="form-control">
+                                <option value="Million">Million</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-6">
+                        <div class="form-group">
+                            <label for="txtPlannedMinutes">Planned Minutes</label>
+                            <input type="text" id="txtPlannedMinutes" data-required="1" placeholder="" class="form-control txtcls" />
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12 col-md-6 col-lg-6">
+                        <div class="form-group">
+                            <label for="txtAchievedMinutes">Achieved Minutes</label>
+                            <input type="text" id="txtAchievedMinutes" data-required="1" placeholder="" class="form-control txtcls" />
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-6">
+                        <div class="form-group">
+                            <label for="txtAchievedPercentage">Achieved Percentage</label>
+                            <input type="text" id="txtAchievedPercentage" data-required="1" placeholder="" class="form-control txtcls" readonly />
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer col-lg-offset-5">
+                <div class="form-group">
+                    <button id="btnSave" type="button" class="btn btn-success col-sm-12 col-md-6 col-lg-6">
+                        <i class="glyphicon glyphicon-saved"></i>Save
+                    </button>
+                    <button type="button" class="btn btn-danger col-sm-12 col-md-6 col-lg-5" data-dismiss="modal">
+                        <i class="glyphicon glyphicon-alert"></i>Close
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style type="text/css">
+    .k-widget.k-datepicker.k-header.form-control {
+        width: 100%;
+    }
+
+    .k-grid .k-grid-header .k-header .k-link {
+        height: auto;
+    }
+
+    .k-grid .k-grid-header .k-header {
+        white-space: normal;
+    }
+</style>
+<style type="text/css">
+    .k-grid .k-grid-header .k-header {
+        white-space: normal;
+        border-right: 1px solid #ddd !important;
+        font-weight: 600;
+        font-size: 9pt;
+        vertical-align: middle;
+    }
+
+    td {
+        border-top: 1px solid #ddd !important;
+        border-top-width: 1px;
+        border-width: 1px 0 0 !important;
+        border-bottom-width: 0px;
+        border-left-width: 0px;
+        border-bottom: 1px solid #ddd !important;
+        border-left: 1px solid #ddd !important;
+        padding: .2em .2em !important;
+        line-height: 1.2em !important;
+        font-size: 9.5pt !important;
+    }
+</style>
+
+

@@ -1,0 +1,6 @@
+C:\Users\asaf\source\repos\SMEWebApps\SMEModel\bin\Debug\SMEModel.dll
+C:\Users\asaf\source\repos\SMEWebApps\SMEModel\bin\Debug\SMEModel.pdb
+C:\Users\asaf\source\repos\SMEWebApps\SMEModel\obj\Debug\SMEModel.csproj.AssemblyReference.cache
+C:\Users\asaf\source\repos\SMEWebApps\SMEModel\obj\Debug\SMEModel.csproj.CoreCompileInputs.cache
+C:\Users\asaf\source\repos\SMEWebApps\SMEModel\obj\Debug\SMEModel.dll
+C:\Users\asaf\source\repos\SMEWebApps\SMEModel\obj\Debug\SMEModel.pdb

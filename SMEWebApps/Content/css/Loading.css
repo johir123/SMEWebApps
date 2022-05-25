@@ -1,0 +1,160 @@
+﻿/*
+#loading {
+    background-color: #fff;
+    height: 100%;
+    margin-top: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 99999999;
+}*/
+#loading {
+    background-color: black;
+    height: 100%;
+    margin-top: 0;
+    opacity: 0.5;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000000 !important;
+}
+
+#loading-center {
+    height: 100%;
+    position: relative;
+    width: 100%;
+}
+
+#loading-center-absolute {
+    height: 200px;
+    left: 50%;
+    margin-left: -100px;
+    margin-top: -100px;
+    position: absolute;
+    top: 35%;
+    transform: rotate(-135deg);
+    width: 200px;
+}
+
+.object {
+    animation: 2s ease 0s normal none infinite running animate;
+    border-color: #17607d transparent transparent #17607d;
+    border-radius: 50%;
+    border-style: solid;
+    border-width: 5px;
+    position: absolute;
+}
+
+#object_one {
+    height: 50px;
+    left: 45px;
+    top: 45px;
+    width: 50px;
+}
+
+#object_two {
+    animation-delay: 0.2s;
+    height: 70px;
+    left: 35px;
+    top: 35px;
+    width: 70px;
+}
+
+#object_three {
+    animation-delay: 0.4s;
+    height: 90px;
+    left: 25px;
+    top: 25px;
+    width: 90px;
+}
+
+#object_four {
+    animation-delay: 0.6s;
+    height: 110px;
+    left: 15px;
+    top: 15px;
+    width: 110px;
+}
+
+.lUserName {
+    text-transform: capitalize;
+}
+
+@keyframes animate {
+    50% {
+        transform: rotate(360deg) scale(0.8);
+    }
+}
+
+table.dataTable.table-condensed thead > tr > th {
+    padding-right: 20px;
+}
+
+.btnGrid {
+    padding: 3px 9px;
+}
+
+table tbody tr.odd {
+    background-color: #c4ffc4;
+}
+
+table tbody tr.even {
+    background-color: #eeffee;
+}
+
+td.details-control {
+    background: url('../../CustomContents/img/details_open.png') no-repeat center center;
+    cursor: pointer;
+}
+
+tr.shown td.details-control {
+    background: url('../../CustomContents/img/details_close.png') no-repeat center center;
+}
+
+.tbltdCol {
+    font-weight: bold;
+    font-size: 13px;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    right: 0;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 9999999999999;
+}
+
+    .dropdown-content a {
+        color: black;
+        padding: 5px 5px;
+        text-decoration: none;
+        display: block;
+    }
+
+    .dropdown-content .btngrdCustom {
+        color: #fff;
+        font-size: 13px;
+        text-align: left;
+    }
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.table > thead > tr > th, .table > tbody > tr > th, .table > tfoot > tr > th, .table > thead > tr > td, .table > tbody > tr > td, .table > tfoot > tr > td {
+    vertical-align: middle;
+    font-size: 10pt;
+    font-family: 'Ek Mukta', sans-serif;
+}
+
+.ColHeading {
+    font-weight: bold;
+    text-align: right;
+}

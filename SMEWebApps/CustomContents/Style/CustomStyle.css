@@ -1,0 +1,184 @@
+﻿.thCenter {
+    text-align: center;
+}
+
+.customError {
+    background-color: #ffeeee;
+    border: 1px solid #ff0000;
+}
+
+.skin-blue .main-header .navbar {
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(74,153,123,1) 54%, rgba(0,212,255,1) 100%);
+}
+
+.skin-blue .main-header .logo {
+    background-color:  #009999;
+    border-bottom: 0 solid transparent;
+    color: #334159;
+}
+
+    .skin-blue .main-header .logo:hover {
+        background-color:  #009999;
+    }
+
+.skin-blue .main-header .navbar .sidebar-toggle {
+    color: #334159;
+}
+
+.skin-blue .main-header .navbar .nav > li > a {
+    color: #334159;
+}
+
+.navbar-nav > .user-menu > .dropdown-menu > li.user-header {
+    height: 120px;
+    padding: 10px;
+    text-align: center;
+}
+
+.skin-blue .main-header li.user-header {
+    background-color:  #009999;
+}
+
+.navbar-nav > .user-menu > .dropdown-menu > li.user-header > p {
+    color: #334159;
+    font-size: 17px;
+    margin-top: 10px;
+    z-index: 5;
+}
+
+.skin-blue .wrapper, .skin-blue .main-sidebar, .skin-blue .left-side {
+    background-color: #009999;
+    color: #334159;
+}
+
+.sidebar-menu li > a {
+    color: #334159;
+    position: relative;
+}
+
+.skin-blue .sidebar a {
+    color: #334159;
+}
+
+.skin-blue .user-panel > .info, .skin-blue .user-panel > .info > a {
+    color: #334159;
+}
+
+.skin-blue .sidebar-menu > li > .treeview-menu {
+    background:  #009999 none repeat scroll 0 0;
+    margin: 0 1px;
+}
+
+.skin-blue .treeview-menu > li > a {
+    color: #334159;
+}
+
+.skin-blue .sidebar-menu > li:hover > a, .skin-blue .sidebar-menu > li.active > a {
+    background: #ecf0f5 none repeat scroll 0 0;
+    border-left-color: #3c8dbc;
+    color: #2c3b41;
+}
+
+#page_navigation {
+    margin-top: 10px;
+}
+
+    #page_navigation a {
+        padding: 3px;
+        border: 1px solid gray;
+        margin: 2px;
+        color: black;
+        text-decoration: none;
+    }
+
+.active_page {
+    background: darkblue;
+    color: white !important;
+}
+
+.table > caption + thead > tr:first-child > td, .table > caption + thead > tr:first-child > th, .table > colgroup + thead > tr:first-child > td, .table > colgroup + thead > tr:first-child > th, .table > thead:first-child > tr:first-child > td, .table > thead:first-child > tr:first-child > th {
+    border-top: 3px solid #e6e6e6;
+}
+
+.error-content {
+    border-style: solid solid none;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    border-width: 0;
+    bottom: 0;
+    box-shadow: -4px -8px 8px -4px #ee2020;
+    position: fixed;
+    width: 100%;
+    z-index: 2147483647;
+    background: #EE2020;
+}
+
+#ulErrorList {
+    color: #fff;
+    display: table;
+    font-family: Helvetica;
+    font-size: 12px;
+    font-weight: bold;
+    list-style-type: none;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    position: relative;
+    width: auto;
+}
+
+.error-content > a {
+    color: #fff;
+    float: right;
+}
+
+#ulErrorList > li::before {
+    content: "*";
+    font-weight: bold;
+    margin-right: 8px;
+}
+
+th {
+    border-width: 0 !important;
+}
+
+td {
+    border-top: 1px solid #ddd !important;
+    border-width: 1px 0 0 !important;
+}
+
+.odd {
+    background-color: #f3f3f3;
+}
+
+.even {
+    background-color: #f9f9f9 !important;
+}
+
+.btn {
+    margin: auto;
+}
+
+.btn-custom {
+    background-color: hsl(211, 58%, 23%) !important;
+    background-repeat: repeat-x;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#3275bd", endColorstr="#18395c");
+    background-image: -khtml-gradient(linear, left top, left bottom, from(#3275bd), to(#18395c));
+    background-image: -moz-linear-gradient(top, #3275bd, #18395c);
+    background-image: -ms-linear-gradient(top, #3275bd, #18395c);
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #3275bd), color-stop(100%, #18395c));
+    background-image: -webkit-linear-gradient(top, #3275bd, #18395c);
+    background-image: -o-linear-gradient(top, #3275bd, #18395c);
+    background-image: linear-gradient(#3275bd, #18395c);
+    border-color: #18395c #18395c hsl(211, 58%, 17%);
+    color: #fff !important;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.39);
+    -webkit-font-smoothing: antialiased;
+}
+
+.nav-tabs a {
+    color: black;
+    background-color: goldenrod;
+    font-style: oblique;
+    font-weight: bold;
+}

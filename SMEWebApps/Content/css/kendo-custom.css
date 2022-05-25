@@ -1,0 +1,42 @@
+﻿/*minimize table padding*/
+.k-grid td {
+    padding: 0.714em 1.143em !important;
+}
+
+/*header font color*/
+.k-grid-header .k-header .k-link, .k-grid-header .k-header, .k-grid-header .k-link, .k-grid-header .k-link:link, .k-pager-info, .k-scheduler-header, .k-scheduler-agendaview .k-scheduler-datecolumn {
+    color: #FFFFFF;
+}
+
+/*footer font color*/
+.k-grid-pager .k-link, .k-grid-pager .k-link:link, .k-floatwrap, .k-floatwrap span.k-icon{
+color: #FFFFFF;
+}
+
+/*footer active font color*/
+.k-pager-numbers .k-state-selected{
+color: yellow;
+}
+
+/*change table header and footer background color*/
+.k-grid-header, .k-grid-header .k-header, .k-pager-wrap, .k-pager-numbers .k-state-selected, .k-grid-footer, .k-grid-footer td, .k-scheduler-header, .km-pane-wrapper .k-grid-header .k-header{
+background-image: -webkit-linear-gradient(#54b4eb, #2fa4e7 60%, #1d9ce5);
+    background-image: -o-linear-gradient(#54b4eb, #2fa4e7 60%, #1d9ce5);
+    background-image: linear-gradient(#54b4eb, #2fa4e7 60%, #1d9ce5);
+    background-repeat: no-repeat;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff54b4eb', endColorstr='#ff1d9ce5', GradientType=0);
+    border-bottom: 1px solid #178acc;
+    filter: none;
+    -webkit-box-shadow: 0 1px 10px rgba(0,0,0,0.1);
+    box-shadow: 0 1px 10px rgba(0,0,0,0.1);
+}
+.k-grid-header th.k-header {
+    vertical-align: middle;
+}
+.k-grid  .k-grid-header  .k-header  .k-link {
+    height: auto;
+}
+  
+.k-grid  .k-grid-header  .k-header {
+    white-space: normal;
+}

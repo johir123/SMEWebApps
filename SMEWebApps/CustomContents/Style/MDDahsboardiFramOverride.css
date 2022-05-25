@@ -1,0 +1,13 @@
+﻿.main-header
+{
+    display:none!important;
+}
+aside.main-sidebar {
+    display: none!important;
+}
+.content-wrapper, .right-side, .main-footer {
+    margin-left:0px;
+}
+.main-footer {
+    display: none !important;
+}

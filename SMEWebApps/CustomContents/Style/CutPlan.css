@@ -1,0 +1,627 @@
+﻿#tblCutPlan {
+    overflow-x: scroll;
+    padding-bottom: 20px;
+}
+
+.txt {
+    font-size: 9pt;
+    padding: 0;
+    border: 1px solid #0099CC;
+    text-align: center;
+    height: 25px;
+}
+
+.table > thead > tr > th, .table > tbody > tr > th, .table > tfoot > tr > th, .table > thead > tr > td, .table > tbody > tr > td, .table > tfoot > tr > td {
+    vertical-align: middle;
+}
+
+.table > thead > tr > th, .table > tbody > tr > th, .table > tfoot > tr > th, .table > thead > tr > td, .table > tbody > tr > td, .table > tfoot > tr > td {
+    border-top: 1px solid #e6e6e6;
+    font-size: 9pt;
+    font-family: century gothic;
+    vertical-align: middle;
+}
+
+table.dataTable.table-condensed thead .sorting::after, table.dataTable.table-condensed thead .sorting_asc::after, table.dataTable.table-condensed thead .sorting_desc::after {
+    top: 10px;
+    right: 6px;
+}
+
+table.dataTable.table-condensed thead > tr > th {
+    padding: 11px;
+}
+
+table tbody tr.even {
+    background-color: #ededed;
+}
+
+.table > thead > tr > th {
+    border: 1px solid #02ad8b;
+    background: #02ad8b;
+    color: #fff;
+}
+
+table tbody tr.odd {
+    background-color: #f7f7f7;
+}
+
+.table > tbody > tr > td, .table > tbody > tr > th, .table > tfoot > tr > td, .table > tfoot > tr > th {
+    padding: 8px 8px 8px 8px;
+    border-left: 1px solid #eee;
+}
+
+.table > tfoot > tr > td, .table > tfoot > tr > th {
+    font-weight: normal;
+}
+
+#tblPackPlan {
+    width: 130%;
+    margin-top: 8px;
+    margin-left: -6px;
+    margin-bottom: -5px;
+}
+
+    #tblPackPlan thead tr th {
+        border: 1px solid #ddd;
+        padding: 2px;
+        font-size: 8.5pt;
+        font-family: century gothic;
+        text-align: center;
+    }
+
+    #tblPackPlan tbody tr td {
+        border: 1px solid #ddd;
+        padding: 5px;
+        font-size: 9pt;
+        font-family: century gothic;
+    }
+
+    #tblPackPlan tfoot tr td {
+        border: 1px solid #ddd;
+        padding: 5px;
+        font-size: 9pt;
+        font-family: century gothic;
+    }
+
+th {
+    border-width: 1px !important;
+}
+
+td {
+    border-top: 1px solid #ddd !important;
+    border-top-width: 1px;
+    border-width: 1px 1px 1px !important;
+}
+
+#tblPackPlan thead {
+    display: table-header-group;
+    background: linear-gradient(40deg,#2096ff,#05ffa3) !important;
+    color: #fff;
+}
+
+#tblPackPlan tfoot {
+    background: #eeeeee;
+    /*color: #fff;*/
+}
+
+.nav-tabs > li.active > a, .nav-tabs > li.active > a:focus, .nav-tabs > li.active > a:hover {
+    color: #fff !important;
+    cursor: pointer;
+    background-color: #009abf !important;
+    border: 1px solid #ddd;
+    border-bottom-color: rgb(221, 221, 221);
+    border-bottom-color: rgb(221, 221, 221);
+    border-bottom-color: transparent;
+}
+
+.nav-tabs > li > a:hover {
+    color: #fff;
+    cursor: pointer;
+    background-color: #009abf;
+    border: 1px solid #ddd;
+    font-family: century gothic;
+    font-size: 9pt;
+}
+
+.nav-tabs > li > a {
+    background: #aaaaaa;
+    color: #fff;
+    font-weight: 600;
+    font-style: normal;
+    font-family: century gothic;
+    font-size: 9pt;
+}
+
+.form-control {
+    border: 2px solid #aaaaaa;
+}
+
+.customRatio {
+    border: 2px solid #f53180;
+}
+
+.spTotal {
+    font-size: 12px;
+    font-weight: 600;
+    border: 2px solid #ddd;
+    padding: 3px;
+    width: 70px;
+    display: block;
+}
+
+.panel-fullscreen {
+    display: block;
+    z-index: 9999;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    overflow: auto;
+}
+
+.nav-tabs {
+    border-bottom: none;
+}
+
+.bootstrap-select:not([class*="col-"]):not([class*="form-control"]):not(.input-group-btn) {
+    width: 100%;
+    border: 1px solid #ededed;
+}
+
+#tblEOAdjustQty_filter, #tblEoList_filter, #tblSelectedEoList_filter {
+    margin-top: -33px;
+}
+
+#tblEOColorSize {
+    border: 1px solid #ddd;
+}
+
+    #tblEOColorSize > thead > tr > th {
+        background-color: #eeeeee;
+        padding: 10px;
+        border: 1px solid #fff;
+        color: #000;
+    }
+
+.btnProCut {
+    font-family: century gothic;
+    font-size: 9.5pt;
+    background-color: #02ad8b;
+    border-color: #02ad8b;
+}
+
+    .btnProCut:hover {
+        background-color: #30d5b4;
+        border-color: #30d5b4;
+    }
+
+.txtCutPlan {
+    font-size: 12px;
+    height: 25px;
+}
+
+.ddlMarkerName {
+    padding: 0px 0px 0px 3px;
+    height: 25px;
+    font-size: 12px;
+}
+
+.ddlShadeName {
+    padding: 0px 0px 0px 3px;
+    height: 25px;
+    font-size: 12px;
+}
+
+.btnAddnewRow {
+    padding: 2px;
+    width: 33px;
+}
+
+.btnRemoveRow {
+    padding: 2px;
+    width: 33px;
+}
+
+#tblEOColorSize tbody tr td {
+    padding: 3px 3px 1px 7px;
+}
+
+#overlay {
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 2;
+    cursor: pointer;
+}
+
+#overlaytext {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 20pt;
+    color: #fff;
+    transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+}
+
+.btnGrd {
+    background-color: #02ad8b;
+    border-color: #02ad8b;
+    color: #fff;
+}
+
+    .btnGrd:hover {
+        background-color: #02ad8b;
+        border-color: #02ad8b;
+        color: #fff;
+    }
+
+    .btnGrd i.fa.fa-trash {
+        color: #fff;
+    }
+
+.spRemainingNormal {
+    border: none;
+    font-size: 9.5pt;
+    color: #007E33;
+    font-weight: bold;
+}
+
+.spRemainingError {
+    border: 2px solid #f53180;
+    font-size: 12pt;
+    color: red;
+    font-weight: bold;
+    padding: 0px 5px 0px 5px;
+}
+
+.tdSizeValue {
+    background: #4B515D;
+}
+
+.tblAdjustedQty {
+    width: 100px !important;
+    padding: 5px 5px 5px 5px;
+    border: 2px solid #ddd;
+    font-size: 10pt;
+}
+
+.FinalDataArea .form-group label {
+    font-family: century gothic;
+    font-size: 9pt;
+}
+
+.btn[class*=btn-outline-] {
+    padding-top: .7rem;
+    padding-bottom: .7rem;
+}
+
+.btnoutline {
+    padding: .50rem 1rem;
+    font-size: 1.1rem;
+    -webkit-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+    margin: .375rem;
+    border: 0;
+    -webkit-border-radius: .125rem;
+    border-radius: .125rem;
+    cursor: pointer;
+    text-transform: uppercase;
+    white-space: normal;
+    word-wrap: break-word;
+    color: #fff;
+}
+
+.btn-outline-primary {
+    border: 2px solid #4285f4 !important;
+    background-color: transparent !important;
+    color: #4285f4 !important;
+}
+
+.waves-effect {
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-tap-highlight-color: transparent;
+    z-index: 1;
+}
+
+.k-grid-header th.k-header {
+    vertical-align: middle;
+    font-family: century gothic;
+    font-size: 9.0pt;
+    font-weight: 600;
+}
+
+.k-grid td {
+    font-family: century gothic;
+    font-size: 9pt;
+    font-weight: 600;
+}
+
+.tdGreen {
+    background: #00C851;
+    color: #fff;
+    font-weight: 600;
+}
+
+.scrollbar::-webkit-scrollbar {
+    -webkit-appearance: none;
+}
+
+    .scrollbar::-webkit-scrollbar:horizontal {
+        height: 11px;
+    }
+
+.scrollbar::-webkit-scrollbar-thumb {
+    border-radius: 8px;
+    border: 2px solid white;
+    background-color: rgba(0, 0, 0, .5);
+}
+
+.scrollbar::-webkit-scrollbar-track {
+    background-color: #fff;
+    border-radius: 8px;
+}
+
+#home label {
+    font-weight: 600;
+    font-family: century gothic;
+    font-size: 10pt;
+}
+
+#home .dropdown-menu > li > a {
+    /*color: #777;*/
+    font-family: century gothic;
+    font-size: 9.5pt;
+}
+
+.nav-tabs > li.active > a, .nav-tabs > li.active > a:focus, .nav-tabs > li.active > a:hover {
+    font-family: century gothic;
+    font-size: 9.5pt;
+}
+
+.btnProCutDel {
+    background-color: red;
+    border: 1px solid red;
+}
+
+    .btnProCutDel:hover {
+        background-color: red;
+        border: 1px solid red;
+    }
+
+.form-control {
+    font-family: century gothic;
+}
+
+.bootstrap-select > .dropdown-toggle {
+    font-family: century gothic;
+    font-size: 9.5pt;
+}
+
+::-webkit-scrollbar-thumb {
+    width: 15px;
+    background: rgb(111,111,111);
+}
+
+
+/*******************************PATTERN MARKER SHADE GROUPING****************************/
+
+.pmsModal .modal-header {
+    border-bottom-color: #1FA469;
+    border-bottom: none;
+    box-shadow: 0px 5px 6px 0px #aaa;
+    background: #1FA464;
+    color: #fff;
+    font-family: calibr;
+}
+
+.pmsModal .row {
+    margin: 0px;
+}
+
+.pmsModal label {
+    font-size: 12px;
+    font-family: calibri;
+}
+
+.pmsModal .col-sm-4, .pmsModal .col-sm-3 {
+    padding-left: 0px;
+}
+
+.pmsModal {
+    margin: 0px 0 0 -280px;
+}
+
+table#tblMarker {
+    width: 99% !important;
+}
+
+table#tblPattern {
+    width: 99% !important;
+}
+
+.pmsModal .bootstrap-select > .dropdown-toggle {
+    background: #32C5D2;
+    color: #fff !important;
+    border-radius: 0;
+}
+
+a.aRemoveMarker {
+    color: #fff;
+    width: 20px;
+    height: 20px;
+    background: #EB3941;
+    border-radius: 50%;
+    position: absolute;
+    right: -6px;
+    top: -4px;
+}
+
+a.aRemoveMarker {
+    display: none;
+}
+
+.has-float-label {
+    display: block;
+    position: relative;
+}
+
+    .has-float-label label, .has-float-label > span {
+        position: absolute;
+        left: 0;
+        top: 0;
+        cursor: text;
+        font-size: 75%;
+        opacity: 1;
+        -webkit-transition: all .2s;
+        transition: all .2s;
+        color: #999;
+    }
+
+    .has-float-label select {
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+    }
+
+    .has-float-label input, .has-float-label select {
+        font-size: inherit;
+        padding-top: 1.25em;
+        margin-bottom: 2px;
+        border: 0;
+        border-radius: 0;
+        border-bottom: 1px solid #c2cad8;
+    }
+
+        .has-float-label input::-webkit-input-placeholder, .has-float-label select::-webkit-input-placeholder {
+            opacity: 1;
+            -webkit-transition: all .2s;
+            transition: all .2s;
+        }
+
+        .has-float-label input:-ms-input-placeholder, .has-float-label select:-ms-input-placeholder {
+            opacity: 1;
+            -webkit-transition: all .2s;
+            transition: all .2s;
+        }
+
+        .has-float-label input::-ms-input-placeholder, .has-float-label select::-ms-input-placeholder {
+            opacity: 1;
+            -webkit-transition: all .2s;
+            transition: all .2s;
+        }
+
+        .has-float-label input::placeholder, .has-float-label select::placeholder {
+            opacity: 1;
+            -webkit-transition: all .2s;
+            transition: all .2s;
+        }
+
+        .has-float-label input:placeholder-shown:not(:focus)::-webkit-input-placeholder, .has-float-label select:placeholder-shown:not(:focus)::-webkit-input-placeholder {
+            opacity: 0;
+        }
+
+        .has-float-label input:placeholder-shown:not(:focus):-ms-input-placeholder, .has-float-label select:placeholder-shown:not(:focus):-ms-input-placeholder {
+            opacity: 0;
+        }
+
+        .has-float-label input:placeholder-shown:not(:focus)::-ms-input-placeholder, .has-float-label select:placeholder-shown:not(:focus)::-ms-input-placeholder {
+            opacity: 0;
+        }
+
+        .has-float-label input:placeholder-shown:not(:focus)::placeholder, .has-float-label select:placeholder-shown:not(:focus)::placeholder {
+            opacity: 0;
+        }
+
+        .has-float-label input:placeholder-shown:not(:focus) + *, .has-float-label select:placeholder-shown:not(:focus) + * {
+            font-size: 16px;
+            top: .25em;
+            color: #999;
+            font-family: calibri;
+            font-weight: 400;
+        }
+
+        .has-float-label input:focus, .has-float-label select:focus {
+            outline: none;
+            border-color: #36C6D3;
+        }
+
+    .has-float-label select {
+        padding-right: 1em;
+        background: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 4 5'%3E%3Cpath fill='%23333' d='M2 0L0 2h4zm0 5L0 3h4z'/%3E%3C/svg%3E") no-repeat right 0.5em bottom 0.25em;
+        background-size: 8px 10px;
+    }
+
+#modalRollPattern td {
+    border: none;
+}
+
+#modalRollPattern td,
+#modalRollMarker td {
+    /*border: none !important;*/
+    border: 1px solid #eee !important;
+    padding: 2px;
+    text-align: center;
+}
+
+#modalRollPattern .odd, #modalRollPattern .even,
+#modalRollMarker .odd, #modalRollMarker .even {
+    background-color: #fff !important;
+}
+
+#modalRollPattern th, #modalRollMarker th {
+    background-color: #fff !important;
+    font-size: 12px;
+}
+
+#modalRollPattern .dataTables_scroll {
+    padding: 12px;
+}
+
+.rotateObj {
+    position: absolute;
+    float: left;
+    /*width: 233px;
+        height: 71vh;*/
+    font-size: 16px !important;
+    /*text-align: center;*/
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+    z-index: 999;
+    margin: 92px -58px;
+}
+
+#modalRollPattern .dataTables_scrollBody td:first-child,
+#modalRollMarker .dataTables_scrollBody td:first-child,
+#modalRollShade .dataTables_scrollBody td:first-child {
+    border: none !important;
+}
+
+#modalRollPattern .dataTables_scrollBody {
+    min-height: 100px;
+}
+
+#modalRollMarker .dataTables_scrollBody {
+    min-height: 60px !important;
+}
+
+#modalRollMarker table button.btn, #modalRollPattern table button.btn {
+    width: 100%;
+}

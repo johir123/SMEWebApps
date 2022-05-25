@@ -1,0 +1,156 @@
+﻿@using BIMOBComon
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="@Url.Content("~/Content/images/Bimob.ico")" />
+
+    <link href="~/Content/Dashboardcss/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/Content/Dashboardcss/default.css" rel="stylesheet" />
+
+
+</head>
+<body>
+    <div class="container-fluid display-table">
+        <div class="row display-table-row">
+
+
+            <!-- Side Menu Start-->
+            <div class="col-md-2 col-sm-1 hidden-xs display-table-cell valign-top" id="side-menu">
+                <h1 class="hidden-xs hidden-sm" style="color:white;">BITOPI GROUP</h1>
+                <div><center><img src="~/CustomContents/img/MGL.png" alt="LogedIn" width="100" height="100" /></center></div>
+                <div>
+                    <span class="label" aria-hidden="true"></span>  @* Mr. Shakawat   ||  Sr. Programmer*@
+                </div>
+                <br />
+
+
+
+                <ul>
+                    @*<li class="link active">
+                            <a href="#">
+                                <span class="glyphicon glyphicon-th" aria-hidden="true"></span>
+                                <span class="hidden-sm hidden-xs">Dashboard</span>
+                            </a>
+                        </li>*@
+
+                    <li class="link">
+                        <a href="#collapse-product" data-toggle="collapse" aria-controls="collapse-product">
+                            <span class="glyphicon glyphicon-list-alt" aria-hidden="true"></span>
+                            <span class="hidden-sm hidden-xs">Dashboard</span>
+                            <span class="label label-success pull-right hidden-sm hidden-xs" aria-hidden="true">4</span>  @**@
+                        </a>
+
+                        <ul class="collapse collapsible" id="collapse-product">
+
+
+
+                            <li><a href="@AppSettings.BaseURL/PlanningDashboard/GetSkillMapping?CompnayID=06&Interval=4">Skill Mapping</a></li>
+                            <li><a href="@AppSettings.BaseURL/PlanningDashboard/GetMachineMapping?CompnayID=06&Interval=4"><img class="img-dashboard1" src="~/CustomContents/imgDashboard/machine-mapping.jpg" width="215" height="180" />Machine Mapping</a></li>
+                           
+
+                        </ul>
+                    </li>
+
+                    <li class="link">
+                        <a href="#collapse-stock" data-toggle="collapse" aria-controls="collapse-stock">
+                            <span class="glyphicon glyphicon-list-alt" aria-hidden="true"></span>
+                            <span class="hidden-sm hidden-xs">Reports</span>
+                            <span class="label label-success pull-right hidden-sm hidden-xs" aria-hidden="true">1</span>
+                        </a>
+
+                        <ul class="collapse collapsible" id="collapse-stock">
+                            <li>@Html.ActionLink("Report", "Index", "report1")</li>
+                        </ul>
+                    </li>
+
+                </ul>
+            </div>
+            <!-- Side Menu End-->
+            <!--Menu Content Start-->
+            <div class="col-md-10 col-sm-11 display-table-cell valign-top">
+
+                <!--Header Start-->
+                <div class="row">
+                    <header id="nav-header" class="clearfix" style="background-color:#eed273">
+                        <div class="col-md-5">
+                            <nav class="navbar-default">
+                                <button type="button" class="navbar-toggle collapsed pull-left" data-toggle="offcanvas" data-target="#side-menu" aria-expanded="false">
+                                    <span class="sr-only">Toggle navigation</span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                </button>
+                            </nav>
+                            <input type="text" class="hidden-sm hidden-xs" id="header-search-field" placeholder="Anything for search .." style="background-color:#eed273; color:#FFFFFF;font-weight:bold;" />
+                        </div>
+                        <div class="col-md-7" style="background-color:#eed273;">
+                            <ul class="pull-right">
+                                <li id="welcome" class="hidden-xs" style="color:#FFFFFF; font-weight:bold;">
+                                    Welcome to your Dashboard
+                                </li>
+                                <li class="fixed-width">
+                                    <a href="#">
+                                        <span class="glyphicon glyphicon-bell" aria-hidden="true"> </span>
+                                        <span class="label label-warning" aria-hidden="true">3</span>
+                                    </a>
+                                </li>
+                                <li class="fixed-width">
+                                    <a href="#">
+                                        <span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>
+                                        <span class="label label-danger" aria-hidden="true"> 3</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="logout">
+                                        <span class="glyphicon glyphicon-log-out" aria-hidden="true"></span>
+                                        Log Out
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </header>
+                </div>
+                <!--Header End-->
+                <!--Inner Content Start-->
+                <div class="row">
+                    <div class="col-md-12">
+                        @RenderBody()
+
+                    </div>
+
+                </div>
+
+                <!--Inner Content End-->
+                <!--Footer Start-->
+                <div class="row">
+                    <footer id="admin-footer" class="clearfix">
+                        <input type="text" id="txtHiddenValue" class="" style="width:0px;">
+                        <div class="pull-left">
+                            <b>Copy right &nbsp;</b>&copy; 2015
+                        </div>
+                        <div class="pull-right">
+                            Admin System
+                        </div>
+                    </footer>
+                </div>
+                <!--Footer End-->
+            </div>
+            <!-- Menu Content End-->
+        </div>
+    </div>
+
+
+
+    @*@Scripts.Render("~/bundles/jquery")
+        @Scripts.Render("~/bundles/bootstrap")
+
+        @RenderSection("scripts", required: false)*@
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="~/Content/Dashboarddetails/Scripts/bootstrap.min.js"></script>
+    <script src="~/Content/Dashboarddetails/Scripts/default.js"></script>
+</body>
+</html>

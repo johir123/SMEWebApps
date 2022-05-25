@@ -1,0 +1,13 @@
+C:\Users\asaf\source\repos\SMEWebApps\SMEUtility\bin\Debug\SMEUtility.dll
+C:\Users\asaf\source\repos\SMEWebApps\SMEUtility\bin\Debug\SMEUtility.pdb
+C:\Users\asaf\source\repos\SMEWebApps\SMEUtility\bin\Debug\Elmah.dll
+C:\Users\asaf\source\repos\SMEWebApps\SMEUtility\bin\Debug\SMEComon.dll
+C:\Users\asaf\source\repos\SMEWebApps\SMEUtility\bin\Debug\SMEModel.dll
+C:\Users\asaf\source\repos\SMEWebApps\SMEUtility\bin\Debug\System.Data.SqlServerCe.dll
+C:\Users\asaf\source\repos\SMEWebApps\SMEUtility\bin\Debug\SMEComon.pdb
+C:\Users\asaf\source\repos\SMEWebApps\SMEUtility\bin\Debug\SMEModel.pdb
+C:\Users\asaf\source\repos\SMEWebApps\SMEUtility\obj\Debug\SMEUtility.csproj.AssemblyReference.cache
+C:\Users\asaf\source\repos\SMEWebApps\SMEUtility\obj\Debug\SMEUtility.csproj.CoreCompileInputs.cache
+C:\Users\asaf\source\repos\SMEWebApps\SMEUtility\obj\Debug\SMEUtility.csproj.CopyComplete
+C:\Users\asaf\source\repos\SMEWebApps\SMEUtility\obj\Debug\SMEUtility.dll
+C:\Users\asaf\source\repos\SMEWebApps\SMEUtility\obj\Debug\SMEUtility.pdb

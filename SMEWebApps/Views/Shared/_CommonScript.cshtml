@@ -1,0 +1,377 @@
+﻿@using SMECommon
+<script type="text/javascript" src="@Url.Content("~/Content/plugins/jQuery/jQuery-2.1.4.min.js")?@AppSettings.Version"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script type="text/javascript" src="@Url.Content("~/Content/bootstrap/js/bootstrap.min.js")?@AppSettings.Version"></script>
+<script type="text/javascript" src="@Url.Content("~/Content/plugins/select2/select2.full.min.js")?@AppSettings.Version"></script>
+<script type="text/javascript" src="@Url.Content("~/Content/plugins/datatables/jquery.dataTables.min.js")?@AppSettings.Version"></script>
+<script type="text/javascript" src="@Url.Content("~/Content/plugins/datatables/dataTables.bootstrap.min.js")?@AppSettings.Version"></script>
+<script type="text/javascript" src="@Url.Content("~/Content/plugins/datatables/dataTables.responsive.min.js")?@AppSettings.Version"></script>
+<script type="text/javascript" src="@Url.Content("~/Content/plugins/datatables/dataTables.rowsGroup.js")?@AppSettings.Version"></script>
+<script type="text/javascript" src="@Url.Content("~/Content/plugins/datatables/dataTables.fixedColumns.min.js")?@AppSettings.Version"></script>
+<script type="text/javascript" src="@Url.Content("~/Content/plugins/fastclick/fastclick.min.js")?@AppSettings.Version"></script>
+<script type="text/javascript" src="@Url.Content("~/Content/dist/js/app.min.js")?@AppSettings.Version"></script>
+<script type="text/javascript" src="@Url.Content("~/Content/dist/js/demo.js")?@AppSettings.Version"></script>
+<script type="text/javascript" src="@Url.Content("~/Content/plugins/iCheck/icheck.min.js")?@AppSettings.Version"></script>
+<script type="text/javascript" src="@Url.Content("~/Content/plugins/daterangepicker/daterangepicker.js")?@AppSettings.Version"></script>
+<script type="text/javascript" src="@Url.Content("~/Content/jquery.growl/javascripts/jquery.growl.js")?@AppSettings.Version"></script>
+@*<script type="text/javascript" src="@Url.Content("~/Content/js/angular.min.js")?@AppSettings.Version"></script>*@
+<script type="text/javascript" src="@Url.Content("~/Content/dist/js/bootstrap-datepicker.js")?@AppSettings.Version"></script>
+<script type="text/javascript" src="@Url.Content("~/CustomContents/Scripts/Utility/List_Item_Paging.js")?@SMECommon.AppSettings.Version"></script>
+<script type="text/javascript" src="@Url.Content("~/Content/jquery.mask.js")?@SMECommon.AppSettings.Version"></script>
+<script type="text/javascript" src="@Url.Content("~/CustomContents/Scripts/Utility/CustomError.js")?@SMECommon.AppSettings.Version"></script>
+<script type="text/javascript" src="@Url.Content("~/CustomContents/Scripts/Dashboard/jquery.easyPaginate.js")?@SMECommon.AppSettings.Version"></script>
+<script type="text/javascript" src="@Url.Content("~/Content/bootstrap/js/bootstrap-select.min.js")?@SMECommon.AppSettings.Version"></script>
+<script type="text/javascript" src="@Url.Content("~/Content/plugins/TableExport/xlsx.core.min.js")?@SMECommon.AppSettings.Version"></script>
+<script type="text/javascript" src="@Url.Content("~/Content/plugins/TableExport/Blob.min.js")?@SMECommon.AppSettings.Version"></script>
+<script type="text/javascript" src="@Url.Content("~/Content/plugins/TableExport/FileSaver.min.js")?@SMECommon.AppSettings.Version"></script>
+<script type="text/javascript" src="@Url.Content("~/Content/plugins/TableExport/tableexport.js")?@SMECommon.AppSettings.Version"></script>
+<script type="text/javascript" src="@Url.Content("~/CustomContents/MISLib/MISPrint/MISPrint.js")?@SMECommon.AppSettings.Version"></script>
+<script type="text/javascript" src="@Url.Content("~/CustomContents/Scripts/Common/LoadDropdownValue.js")?@SMECommon.AppSettings.Version"></script>
+<script type="text/javascript" src="@Url.Content("~/CustomContents/Scripts/Common/CustomFunctions.js")?@SMECommon.AppSettings.Version"></script>
+<script type="text/javascript" src="@Url.Content("~/Content/jquery.arrayUtilities.min.js")?@SMECommon.AppSettings.Version"></script>
+@*Kendo Scripts*@
+@*<script type="text/javascript" src="@Url.Content("https://code.jquery.com/ui/1.12.1/jquery-ui.js")?@SMECommon.AppSettings.Version"></script>
+    <script type="text/javascript" src="@Url.Content("~/Scripts/kendo/2017.1.118/kendo.all.min.js")?@SMECommon.AppSettings.Version"></script>
+    <script type="text/javascript" src="@Url.Content("~/Scripts/kendo/2017.1.118/kendo.aspnetmvc.min.js")?@SMECommon.AppSettings.Version"></script>
+    <script type="text/javascript" src="@Url.Content("~/Content/Chosen/chosen.jquery.min.js")?@SMECommon.AppSettings.Version"></script>*@
+<script type='text/javascript' src='@Url.Content("~/Content/plugins/timepicker/timepicki.js")?@SMECommon.AppSettings.Version'></script>
+<script type='text/javascript' src='@Url.Content("~/Content/jquery.number.min.js")?@SMECommon.AppSettings.Version'></script>
+<script type='text/javascript' src='@Url.Content("~/Content/js/jquery.form.min.js")?@SMECommon.AppSettings.Version'></script>
+<script type='text/javascript' src='@Url.Content("~/Content/js/sweetalert2.js")?@SMECommon.AppSettings.Version'></script>
+
+<script type='text/javascript' src='@Url.Content("~/Content/Highcharts/code/highcharts.js")?@SMECommon.AppSettings.Version'></script>
+
+@*<script src="~/Content/js/jquery.form.min.js"></script>*@
+<script language="javascript" type="text/javascript">
+    var baseURL = "@AppSettings.BaseURL";
+    var baseVersion = "@AppSettings.Version";
+    var G_UserCode = "@SMESessionVar.UserCode";
+    var G_UserName = "@SMESessionVar.UserName";
+    var G_Email = "@SMESessionVar.EMail";
+    var G_EmployeeName = "@SMESessionVar.EmployeeName";
+    var G_EmpImage = "@SMESessionVar.EmpImage";
+    var G_Department = "@SMESessionVar.Department";
+    var G_Designation = "@SMESessionVar.Designation";
+    var G_Unit = "@SMESessionVar.Unit";
+    //var G_RedirectUrl = "@SMESessionVar.RedirectUrl";
+    var G_KendoGridName = "";
+    $(function () {
+        $('.numeric').mask('0000000000');
+
+        $('.decimalNumber').on('input', function (e) {
+            var val = $(this).val();
+            if (isNaN(val)) {
+                val = val.replace(/[^0-9\.]/g, '');
+                if (val.split('.').length > 2)
+                    val = val.replace(/\.+$/, "");
+            }
+            $(this).val(val);
+        });
+
+        if (G_UserCode == "") {
+            window.location.href = baseURL + "/LogIn/Index";
+        }
+        $(".pUserName").text(G_EmployeeName);
+        $(".pDesignation").html(G_EmployeeName + "<small>" + G_Designation + "</small>");
+
+        $("#btnLogout").click(function (e) {
+            e.preventDefault();
+            LogoutUser();
+        });
+        @*if ($("#hdMenu").val() == "") {
+            G_UserCode = "@SMESessionVar.UserCode";
+            if (G_UserCode == "") {
+                window.location.href = baseURL + "/LogIn/Index";
+            }
+            else {
+                BindUserMenu();
+                $("#hdMenu").val("4");
+            }
+        }*@
+        G_UserCode = "@SMESessionVar.UserCode";
+        if (G_UserCode == "") {
+            window.location.href = baseURL + "/LogIn/Index";
+        }
+        else {
+            BindUserMenu();
+            $("#hdMenu").val("4");
+        }
+        //var _pImageSource = baseURL + "/EmpImages/I" + G_UserCode + ".png";
+        var _pImageSource = "";
+        if (G_UserCode == "E00001") {
+            _pImageSource = baseURL + "/EmpImages/IE00001.png";
+        }
+        else if (G_UserCode == "E00002") {
+            _pImageSource = baseURL + "/EmpImages/IE00002.png";
+        }
+        else if (G_UserCode == "E00003") {
+            _pImageSource = baseURL + "/EmpImages/IE00003.png";
+        }
+        else {
+            _pImageSource = baseURL + "/EmpImages/" + "@SMESessionVar.ProfileImage";
+        }
+        $(".imgProfile").attr("src", _pImageSource);
+
+        $(document).ajaxStart(function () {
+            $("#loading").fadeIn();
+        });
+        $(document).ajaxStop(function () {
+            $("#loading").fadeOut();
+        });
+        $(document).ajaxComplete(function () {
+            $("#loading").fadeOut();
+        });
+        $(document).ajaxError(function () {
+            $("#loading").fadeOut();
+        });
+        $(window).load(function () {
+            $("#loading").fadeOut();
+        });
+        $('.formdate').datepicker({
+            format: 'dd/mm/yyyy',
+        }).on('changeDate', function (e) {
+            $(this).datepicker('hide');
+        });
+        $('.dateCustom').datepicker({
+            format: 'mm/dd/yyyy',
+        }).on('changeDate', function (e) {
+            $(this).datepicker('hide');
+        });
+        //$('#easyPaginate').easyPaginate({
+        //    paginateElement: 'span',
+        //    elementsPerPage: 4,
+        //    effect: 'climb'
+        //});
+    /***** Kendo Grid Common Search Start******/
+        $('#Kendofilter').on('input', function (e) {
+            var _TableName = G_KendoGridName;
+            SearchGridData(_TableName, e);
+            //var grid = $('#'+G_KendoGridName).data('kendoGrid');
+            //var columns = grid.columns;
+
+            //var filter = { logic: 'or', filters: [] };
+            //columns.forEach(function (x) {
+            //    if (x.field) {
+            //        var type = grid.dataSource.options.schema.model.fields[x.field].type;
+            //        if (type == 'string') {
+            //            filter.filters.push({
+            //                field: x.field,
+            //                operator: 'contains',
+            //                value: e.target.value
+            //            })
+            //        }
+            //        else if (type == 'number') {
+            //            if (isNumeric(e.target.value)) {
+            //                filter.filters.push({
+            //                    field: x.field,
+            //                    operator: 'eq',
+            //                    value: e.target.value
+            //                });
+            //            }
+
+            //        } else if (type == 'date') {
+            //            var data = grid.dataSource.data();
+            //            for (var i = 0; i < data.length; i++) {
+            //                var dateStr = kendo.format(x.format, data[i][x.field]);
+            //                if (dateStr.startsWith(e.target.value)) {
+            //                    filter.filters.push({
+            //                        field: x.field,
+            //                        operator: 'eq',
+            //                        value: data[i][x.field]
+            //                    })
+            //                }
+            //            }
+            //        } else if (type == 'boolean' && getBoolean(e.target.value) !== null) {
+            //            var bool = getBoolean(e.target.value);
+            //            filter.filters.push({
+            //                field: x.field,
+            //                operator: 'eq',
+            //                value: bool
+            //            });
+            //        }
+            //    }
+            //});
+            //grid.dataSource.filter(filter);
+        });
+        /***** Kendo Grid Search End******/
+        $('.KendoCommonfilter').on('input', function (e) {
+            var _TableName = $(this).attr('grid-id');
+            SearchGridData(_TableName, e);
+        });
+    });
+    function SearchGridData(TableName,e) {
+        G_KendoGridName = TableName;
+        var grid = $('#' + G_KendoGridName).data('kendoGrid');
+        var columns = grid.columns;
+
+        var filter = { logic: 'or', filters: [] };
+        columns.forEach(function (x) {
+            if (x.field) {
+                var type = grid.dataSource.options.schema.model.fields[x.field].type;
+                if (type == 'string') {
+                    filter.filters.push({
+                        field: x.field,
+                        operator: 'contains',
+                        value: e.target.value
+                    })
+                }
+                else if (type == 'number') {
+                    if (isNumeric(e.target.value)) {
+                        filter.filters.push({
+                            field: x.field,
+                            operator: 'eq',
+                            value: e.target.value
+                        });
+                    }
+
+                } else if (type == 'date') {
+                    var data = grid.dataSource.data();
+                    for (var i = 0; i < data.length; i++) {
+                        var dateStr = kendo.format(x.format, data[i][x.field]);
+                        if (dateStr.startsWith(e.target.value)) {
+                            filter.filters.push({
+                                field: x.field,
+                                operator: 'eq',
+                                value: data[i][x.field]
+                            })
+                        }
+                    }
+                } else if (type == 'boolean' && getBoolean(e.target.value) !== null) {
+                    var bool = getBoolean(e.target.value);
+                    filter.filters.push({
+                        field: x.field,
+                        operator: 'eq',
+                        value: bool
+                    });
+                }
+            }
+        });
+        grid.dataSource.filter(filter);
+    }
+    function LogoutUser() {
+        $.ajax({
+            type: "POST",
+            url: baseURL + "/LogIn/LogOutUser",
+            data: {},
+            contentType: "application/json",
+            datatype: "json",
+            success: function (data) {
+                if (data.Success == "True") {
+                    $("#hdMenu").val("");
+                    window.location.href = baseURL + "/Login/Index";
+                }
+                else {
+                    alert('Log Out Failed..!');
+                }
+            }
+        });
+    }
+
+        function BindUserMenu() {
+            if (G_UserCode == "") {
+                window.location.href = baseURL + "/LogIn/Index";
+            }
+
+        $.ajax({
+            type: 'POST',
+            contentType: 'application/json; charset=utf-8',
+            url: baseURL + '/Menu/LoadAllMenu',
+            data: {},
+            async: false,
+            dataType: 'json',
+            success: function (data) {
+                $("#divAdminMenu").empty();
+                var _menuList = "";
+                var _menuIcon = "";
+                var _subMenuName = "";
+                var _subMenuList = "";
+                var _subMenuIcon = "";
+                var _count = 0;
+                $.each(data, function (i, item) {//item.MenusId
+                    if (item.ParentMenuId == "-1") {
+                        _menuList += "<li><a href='" + baseURL + item.Url + "'><i class='fa fa-" + item.IconName + "''></i> <span>" + item.Title + "</span></a></li>";
+                    }
+                    else if (item.ParentMenuName != "" && _count == 0 && _subMenuName != item.ParentMenuName) {
+                        _subMenuList += "<li><a href='" + baseURL + item.Url + "'><i class='fa fa-" + item.IconName + "'></i> <span>" + item.Title + "</span></a></li>";
+                        _subMenuName = item.ParentMenuName;
+                        _menuIcon = item.HeadIcon;
+                        _count++;
+                    }
+                    else if (_subMenuName == item.ParentMenuName) {
+                        _subMenuList += "<li><a href='" + baseURL + item.Url + "'><i class='fa fa-" + item.IconName + "'></i> <span>" + item.Title + "</span></a></li>";
+                        _subMenuName = item.ParentMenuName;
+                        _count++;
+                    }
+                    else if (_subMenuName != item.ParentMenuName) {
+                        _menuList += "<li class='treeview'><a href='#'><i class='fa fa-" + _menuIcon + "'></i> <span>" + _subMenuName + "</span><i class='fa fa-angle-left pull-right'></i></a><ul class='treeview-menu'>" + _subMenuList + "</ul></li>";
+                        _subMenuList = "";
+                        _subMenuList += "<li><a href='" + baseURL + item.Url + "'><i class='fa fa-" + item.IconName + "'></i> <span>" + item.Title + "</span></a></li>";
+                        _subMenuName = item.ParentMenuName;
+                        _menuIcon = item.HeadIcon;
+                        _count++;
+                    }
+                });
+                if (_subMenuName != "") {
+                    _menuList += "<li class='treeview'><a href='#'><i class='fa fa-" + _menuIcon + "'></i> <span>" + _subMenuName + "</span><i class='fa fa-angle-left pull-right'></i></a><ul class='treeview-menu'>" + _subMenuList + "</ul></li>";
+                    _subMenuName = "";
+                    _subMenuList = "";
+                    _subMenuIcon = "";
+                }
+                $("#divAdminMenu").append(_menuList);
+            }
+        });
+    }
+    function ClearDataTable(DataTableName) {
+        var table = $('#' + DataTableName).DataTable();
+        table.clear().draw();
+    }
+    function toggleSelectAll(control) {
+        var allOptionIsSelected = (control.val() || []).indexOf("All") > -1;
+        function valuesOf(elements) {
+            return $.map(elements, function (element) {
+                if (element.value != 'All')
+                    return element.value;
+            });
+        }
+
+        if (control.data('allOptionIsSelected') != allOptionIsSelected) {
+            // User clicked 'All' option
+            if (allOptionIsSelected) {
+                // Can't use .selectpicker('selectAll') because multiple "change" events will be triggered
+                control.selectpicker('val', valuesOf(control.find('option')));
+            } else {
+                control.selectpicker('val', []);
+            }
+        } else {
+            // User clicked other option
+            if (allOptionIsSelected && control.val().length != control.find('option').length) {
+                // All options were selected, user deselected one option
+                // => unselect 'All' option
+                control.selectpicker('val', valuesOf(control.find("option:selected[value!='All']")));
+                allOptionIsSelected = false;
+            } else if (!allOptionIsSelected && control.val().length == control.find('option').length - 1) {
+                // Not all options were selected, user selected all options except 'All' option
+                // => select 'All' option too
+                control.selectpicker('val', valuesOf(control.find('option')));
+                allOptionIsSelected = true;
+            }
+        }
+        control.data('allOptionIsSelected', allOptionIsSelected);
+    }
+
+    //******** For Kendo Grid Search Purpose Start ***********//
+    function isNumeric(n) {
+        return !isNaN(parseFloat(n)) && isFinite(n);
+    }
+
+    function getBoolean(str) {
+        if ("true".startsWith(str)) {
+            return true;
+        } else if ("false".startsWith(str)) {
+            return false;
+        } else {
+            return null;
+        }
+    }
+    //******** For Kendo Grid Search Purpose End ***********//
+</script>

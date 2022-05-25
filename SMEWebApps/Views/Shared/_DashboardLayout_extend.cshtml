@@ -1,0 +1,256 @@
+﻿<!DOCTYPE html>
+@using BIMOBComon
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <link rel="icon" href="@Url.Content("~/Content/images/Bimob.ico")" />
+    @Html.Partial("_CommonCSS")
+    @Html.Partial("_DashBoardCommonScript")
+    <script type="text/javascript" src="@Url.Content("~/Content/plugins/slimScroll/jquery.slimscroll.js")?@AppSettings.Version"></script>
+    <script type="text/javascript" src="@Url.Content("~/Content/plugins/slimScroll/prettify.js")?@AppSettings.Version"></script>
+    <link rel="stylesheet" type="text/css" href="@Url.Content("~/Content/plugins/slimScroll/prettify.css")?@BIMOBComon.AppSettings.Version" />
+
+
+
+    <style type="text/css">
+        body {
+            background-color: #2e3439;
+        }
+
+        .allSelect {
+            padding: 3px 20px;
+            text-transform: uppercase;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        /*.c-menu--push-right {
+            width: 370px !important;
+        }*/
+
+        .c-menu__items {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            height: 90vh;
+            overflow-y: auto !important;
+        }
+
+        /*.c-menu--push-right {
+            -webkit-transform: translateX(370px)!important;
+            -ms-transform: translateX(370px)!important;
+            transform: translateX(370px)!important;
+        }*/
+    </style>
+</head>
+<body >
+     
+    <div id="o-wrapper">
+        @RenderBody()
+    </div>
+    <nav id="c-menu--push-right" class="c-menu c-menu--push-right sidebar">
+        <button class="c-menu__close">Close Menu &rarr;</button>
+        @*<ul id="divAdminMenu" class="sidebar-menu">*@
+        <ul id="divDashboardMenu" class="c-menu__items sidebar-menu">
+            <li class="c-menu__item">
+                <a href="@AppSettings.BaseURL/Dashboard/Index" class="c-menu__link">
+                    <i class="fa fa-home" aria-hidden="true"></i>
+                    Home
+                </a>
+            </li>
+            <li class="c-menu__item">
+                <a href="@AppSettings.BaseURL/PlanningDashboard/GetMachineMapping" class="c-menu__link">
+                    <i class="fa fa-cogs" aria-hidden="true"></i>
+                    Machine Maping Dashboard
+                </a>
+            </li>
+            <li class="c-menu__item">
+                <a href="@AppSettings.BaseURL/PlanningDashboard/GetSkillMapping" class="c-menu__link">
+                    <i class="fa fa-users" aria-hidden="true"></i>
+                    Skill Maping Dashboard
+                </a>
+            </li>
+            <li class="c-menu__item">
+                <a href="@AppSettings.BaseURL/PlanningDashboard/GetBusinessPlan" class="c-menu__link">
+                    <i class="fa fa-building" aria-hidden="true"></i>
+                    Business Plan Dashboard
+                </a>
+            </li>
+
+        </ul>
+        <button type="button" class="btn btn-facebook btnShowHideGraph">Hide Chart</button>
+    </nav><!-- /c-menu push-right -->
+    <div id="c-mask" class="c-mask"></div>
+    <div class="modal fade" id="modalPopupDetails" tabindex="-1" role="dialog" style="width:100%">
+        <div class="modal-dialog" role="document" style="width:80%">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title"></h4>
+                    @*<a class="print"><i class="fa fa-print" aria-hidden="true"></i></a>*@
+                </div>
+                <div class="mis-print" style="padding: 4px;">
+                    <table id="tblPopupDetails" class="table table-striped table-bordered dt-responsive nowrap"></table>
+                </div>
+                @*<div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>*@
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+</body>
+</html>
+<style>
+    .c-menu__close {
+        -moz-appearance: none;
+        background-color: #313129;
+        border: medium none;
+        box-shadow: none;
+        color: #fff;
+        cursor: pointer;
+        font-size: 14px;
+        font-weight: bold;
+    }
+
+    .popover-title {
+        font-size: 13px;
+        font-family: calibri;
+    }
+
+    .c-menu {
+        /*background-color: #2d4373;*/
+        background-color: #fff;
+        position: fixed;
+        transition: transform 0.3s ease 0s;
+        z-index: 999999;
+    }
+
+    .form-control.dvHeader {
+        z-index: 999;
+    }
+
+    .slideDown {
+        position: fixed;
+        z-index: 99;
+        display: block !important;
+    }
+
+    .pos {
+        position: absolute;
+        z-index: -1111;
+        top: 0;
+    }
+    /*.dataTables_scrollBody {
+        overflow: hidden !important;
+    }*/
+    .c-mask {
+        z-index: 99999;
+    }
+
+    td:last-child {
+        border-right-width: 0 !important;
+    }
+
+    .table-bordered {
+        /*border: 2px solid #4d4d4d!important;*/
+        border-radius: 0px;
+    }
+    /*.tr:first-child td {
+        border-top-width: 0 !important;
+        border-width: 1px 0 0 !important;
+    }*/
+    .c-dashboard__item span {
+        color: #111;
+    }
+
+    .c-dashboard__item img {
+        width: 20px;
+        height: 20px;
+        margin-right: 20px;
+    }
+
+    #modalPopupDetails .dataTables_scrollBody {
+        max-height: 70vh;
+    }
+
+        /*#modalPopupDetails .dataTables_scrollBody table,
+        #modalPopupDetails .dataTables_scrollHeadInner table {
+            width: auto !important;
+        }*/
+
+   #modalPopupDetails #tblPopupDetails {
+        width: 100% !important;
+    }
+</style>
+
+<script type="text/javascript" src="@Url.Content("~/Content/Highcharts/code/highcharts.js")?@BIMOBComon.AppSettings.Version"></script>
+<script type="text/javascript" src="@Url.Content("~/Content/Highcharts/code/modules/exporting.js")?@BIMOBComon.AppSettings.Version"></script>
+<script type="">
+
+    var debounce = function (func, wait, immediate) {
+        var timeout;
+        return function () {
+            var context = this, args = arguments;
+            var later = function () {
+                timeout = null;
+                if (!immediate) func.apply(context, args);
+            };
+            var callNow = immediate && !timeout;
+            clearTimeout(timeout);
+            timeout = setTimeout(later, wait);
+            if (callNow) func.apply(context, args);
+        };
+    };
+    $(document).ready(function () {
+        var tblPopupDetails;
+
+        var pushRight = new Menu({
+            wrapper: '#o-wrapper',
+            type: 'push-right',
+            menuOpenerClass: '.c-button',
+            maskId: '#c-mask'
+        });
+        $('.c-button').on('click', function () {
+            pushRight.open();
+        })
+        var isScrollStart = false;
+        $('#o-wrapper').on('click', 'a.popupdetails', function (event) {
+
+            event.stopPropagation();
+            if (tblPopupDetails != undefined && tblPopupDetails.Grid != undefined && $('#tblPopupDetails').is(':empty') == false) {
+                tblPopupDetails.Grid.destroy().draw(false);
+                $('#tblPopupDetails').empty();
+            }
+            var popupid = $(this).data('popupid');
+            var paramdata = $(this).data('paramdata');
+
+            var _dbModel = { 'PopupID': popupid, 'ParamVal': paramdata };
+
+           
+            $.post(baseURL + "/PlanningDashboard/GetPopupDetails", _dbModel, function (data) {
+                $('#tblPopupDetails').MISPrint({ Title: data.PopupTitle, PrintHeading: data.PopupTitle });
+                $('#modalPopupDetails .modal-title').html(data.PopupTitle);
+                tblPopupDetails = $('#tblPopupDetails').MISGrid({
+                    data: data.DataList,
+                    AjaxType: 'POST',
+
+                    width: true,
+
+                    //rowsGroup: ['DMM:name', 'Buyer Name:name'],
+                    onLoadComplete: function (context) {
+
+                        $('#modalPopupDetails').modal('show');
+                        setTimeout(function () {
+                            context.columns.adjust();
+                            context.columns.adjust();
+                        }, 500);
+                    }
+                });
+            })
+            return false;
+        });
+    });
+    
+</script>

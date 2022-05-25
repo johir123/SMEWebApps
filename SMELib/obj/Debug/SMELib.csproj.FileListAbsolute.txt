@@ -1,0 +1,13 @@
+C:\Users\asaf\source\repos\SMEWebApps\SMELib\bin\Debug\SMELib.dll
+C:\Users\asaf\source\repos\SMEWebApps\SMELib\bin\Debug\SMELib.pdb
+C:\Users\asaf\source\repos\SMEWebApps\SMELib\bin\Debug\Elmah.dll
+C:\Users\asaf\source\repos\SMEWebApps\SMELib\bin\Debug\SMEComon.dll
+C:\Users\asaf\source\repos\SMEWebApps\SMELib\bin\Debug\SMEModel.dll
+C:\Users\asaf\source\repos\SMEWebApps\SMELib\bin\Debug\System.Data.SqlServerCe.dll
+C:\Users\asaf\source\repos\SMEWebApps\SMELib\bin\Debug\SMEComon.pdb
+C:\Users\asaf\source\repos\SMEWebApps\SMELib\bin\Debug\SMEModel.pdb
+C:\Users\asaf\source\repos\SMEWebApps\SMELib\obj\Debug\SMELib.csproj.AssemblyReference.cache
+C:\Users\asaf\source\repos\SMEWebApps\SMELib\obj\Debug\SMELib.csproj.CoreCompileInputs.cache
+C:\Users\asaf\source\repos\SMEWebApps\SMELib\obj\Debug\SMELib.csproj.CopyComplete
+C:\Users\asaf\source\repos\SMEWebApps\SMELib\obj\Debug\SMELib.dll
+C:\Users\asaf\source\repos\SMEWebApps\SMELib\obj\Debug\SMELib.pdb

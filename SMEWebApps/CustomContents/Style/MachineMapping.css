@@ -1,0 +1,353 @@
+﻿*{
+    font-family:Calibri;
+}
+.container-fluid, .highcharts-background {
+    background-color: #2e3439;
+    fill: #2e3439;
+}
+
+.c-menu--push-right {
+    overflow-y: hidden !important;
+}
+
+.btnShowHideGraph {
+    bottom: 0;
+    position: fixed;
+    width: 100%!important;
+}
+
+.c-menu__items a {
+    text-align: left;
+}
+
+.c-button:hover {
+    color: #d3d3d3;
+}
+
+.tooltip-inner {
+    white-space: pre;
+    max-width: none;
+    text-align: left;
+}
+
+.tblCompnay {
+    width: 100%;
+}
+
+    .tblCompnay td {
+        /*background: linear-gradient(#ff5722, #dd2c00);*/
+        background: #f44917;
+    }
+
+.txtInterval {
+    border-radius: 3px;
+    height: auto;
+    width: 43%;
+    float: left;
+    padding: 6px 12px;
+    margin-right: 4px;
+    font-family: "Oxygen",Helvetica,sans-serif !important;
+font-size: 12px;
+
+}
+.c-button {
+    border: 0 none !important;
+    color: #fff !important;
+    font-size: 23px !important;
+    float: right;
+}
+.pressed {
+    background: #ff7b46 none repeat scroll 0 0 !important;
+    font-weight: bold;
+}
+
+.tblCompnay {
+    border: 1px solid #fff;
+}
+/*#tblMachineMapping,  #tblSummeryList {
+    margin-top: 0px !important;
+}*/
+.c-button, .aSearch {
+    float: left;
+    font-size: 18px;
+    height: auto;
+    margin-left: 2px;
+    padding: 0 12px;
+    width: 20px;
+    border: none;
+    color: #fff;
+}
+
+/*.aSearch {
+}*/
+
+.no-right-border {
+    border-right-width: 0 !important;
+}
+
+.sidebar-menu {
+   /* background: #eee none repeat scroll 0 0 !important;
+    float: right;
+    height: 100vh !important;
+    position: fixed;
+    right: 0;
+    width: 20% !important;*/
+}
+
+table.dataTable thead .sorting,
+table.dataTable thead .sorting_asc,
+table.dataTable thead .sorting_desc {
+    background: none;
+}
+
+.highcharts-axis-labels.highcharts-xaxis-labels text {
+    color: #ffffff;
+    fill: #ffffff;
+}
+
+.align {
+    /*display: table;*/
+    height: auto;
+    margin: auto;
+    /*min-width: 73px;*/
+    text-align: left;
+}
+
+.highcharts-title {
+    color: #ffffff !important;
+    fill: #ffffff !important;
+}
+
+tspan {
+    color: #ffffff !important;
+    fill: #ffffff !important;
+}
+
+.even, .odd {
+    background-color: #2e3439 !important;
+}
+    .even td, .odd td,td {
+        color:#2e3439;
+    }
+
+table.dataTable thead > tr > th {
+    padding-right: 30px;
+    color: #ffffff;
+}
+
+td {
+    /*border-top: 1px solid #ddd !important;
+            border-width: 1px 0 0 !important;*/
+    /*color: #fff;*/
+    /*border-right: 1px solid #fff !important;*/
+    border-right: 1px solid #DDDDDD !important;
+}
+
+table.dataTable tbody th, table.dataTable tbody td {
+    padding: 2px 10px !important;
+}
+
+table.dataTable thead > tr > th {
+    padding: 2px 4px !important;
+}
+
+table.dataTable thead .sorting_asc::after {
+    content: "";
+}
+
+th, td {
+    padding: 5px;
+    text-align: center;
+    vertical-align: middle !important;
+    font-size: 11px;
+}
+
+.even {
+    /*background-color: #634068 !important;*/
+    background-color: #FFFFFF !important;
+}
+
+.odd {
+    /*background-color: #634068 !important;*/
+    background-color: #F9F9F9 !important;
+}
+
+thead tr {
+    /*background-color: #2B908F;*/
+    background-color: #555!important;
+}
+
+.highcharts-credits {
+    display: none;
+}
+/*.max:after {
+          content: "\e155";
+
+        }*/
+.noBuletine {
+    border: 1px solid #c99;/*#fff*/
+    border-radius: 2px;
+}
+
+.positive {
+    /*background-color: green;*/
+    background: #fff9c4; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(#fff9c4, #ffd600); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#fff9c4, #ffd600); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#fff9c4, #ffd600); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#fff9c4, #ffd600); /* Standard syntax */
+    color: #606060;
+    /*border-radius: 50%;*/
+    /*border-radius: 2px;*/
+    height: auto;
+    margin: auto;
+    /*box-shadow: 0px 0px 2px 1px #FFED7E;*/
+}
+
+.balanceNegetive {
+    /*background-color: green;*/
+    background: #ffa726; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(#ffa726,#ff9100); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#ffa726,#ff9100); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#ffa726,#ff9100); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#FFF500,#FFCC00); /* Standard syntax */
+    color: #444;
+    /*border-radius: 50%;*/
+    /*border-radius: 2px;*/
+    display: table;
+    font-size: 12px;
+    height: auto;
+    margin: auto;
+    /*box-shadow: 0px 0px 2px 1px #FFED7E;*/
+}
+
+.balanceNegetive, .noBuletine, .positive, .nevetive, .max, .min,.OverBooked {
+    text-align: center;
+    padding: 2px 4px;
+    width: 50px;
+    display: table;
+    font-size: 12px;
+    margin:auto;
+}
+
+.nevetive {
+    /*background-color: green;*/
+    background: #ef6c00; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(#ef6c00, #ff9800); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#ef6c00, #ff9800); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#ef6c00, #ff9800); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#ef6c00, #ff9800); /* Standard syntax */
+    /*border-radius: 50%;*/
+    /*border-radius: 2px;*/
+    display: table;
+    font-size: 12px;
+    height: auto;
+    margin: auto;
+    padding: 2px 4px;
+    width: 50px;
+    /*box-shadow: 0px 0px 2px 1px #FFED7E;*/
+}
+
+.max {
+    /*background-color: green;*/
+    background: #b4ddb4; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(#96bf96, #007600); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#96bf96, #007600); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#96bf96, #007600); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#96bf96, #007600); /* Standard syntax */
+    /*border-radius: 50%;*/
+    /*border-radius: 2px;*/
+    display: table;
+    font-size: 12px;
+    color:#fff;
+    height: auto;
+    margin: auto;
+    padding: 2px 4px;
+    width: 50px;
+    /*box-shadow: 0px 0px 2px 1px #7DBD7D;*/
+}
+
+.min {
+    /*background-color: red;*/
+    background: #d10d0d; /* Old browsers */
+    /*background: -moz-linear-gradient(top, #ef9a9a 0%, #d50000 100%);*/ /* FF3.6-15 */
+    /*background: -webkit-linear-gradient(top, #ef9a9a 0%, #d50000 100%);*/ /* Chrome10-25,Safari5.1-6 */
+    /*background: linear-gradient(to bottom, #ef9a9a 0%, #d50000 100%);*/ /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    background: -moz-linear-gradient(top, #ff6161 0%, #d10d0d 100%);  
+    background: -webkit-linear-gradient(top, #ff6161 0%, #d10d0d 100%);  
+    background: linear-gradient(to bottom, #ff6161 0%, #d10d0d 100%);  
+    color:#fff;
+    /*border-radius: 50%;*/
+    /*border-radius: 2px;*/
+    display: table;
+    font-size: 12px;
+    height: auto;
+    margin: auto;
+    padding: 2px 4px;
+    width: 50px;
+    /*box-shadow: 0px 0px 2px 1px #E35555;*/
+}
+.OverBooked {
+    /*background-color: green;*/
+    background: #0d47a1; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(#6381C0, #0d47a1); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#6381C0,#0d47a1); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#6381C0, #0d47a1); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#6381C0, #0d47a1); /* Standard syntax */
+    /*border-radius: 50%;*/
+    border-radius: 2px;
+    display: table;
+    font-size: 12px;
+    height: auto;
+    margin: auto;
+    padding: 2px 4px;
+    width: 50px;
+    box-shadow: 0px 0px 2px 1px #7DBD7D;
+}
+tr:hover {
+    cursor: pointer;
+}
+.btn.btn-facebook.btnShowHideGraph {
+    border: medium none;
+    box-shadow: 0 0 8px 5px #3d5383;
+}
+.DTFC_RightBodyLiner {
+    overflow: hidden!important;
+}
+.DTFC_LeftBodyLiner {
+overflow:hidden!important;
+/*width:0!important;*/
+}
+#tblMachineMapping table {
+    border:none;
+}
+
+.blink {
+  animation: blinker 1s linear infinite;
+  font-weight:bold;
+  background:#191970;
+  color:#fff;
+}
+@keyframes blinker {  
+  70% { opacity: 0; }
+}
+
+ .dvHeader {
+        background: #f44917 none repeat scroll 0 0;
+        height: auto;
+        float: left;
+    }
+
+    /*.row {
+                margin: 0 0 8px 20vw;
+            }*/
+   
+
+    .dvHeader label {
+        display: block;
+        color: #fff;
+    }
+
+ .tooltip{
+  z-index: 1151 !important;
+}
