@@ -8,13 +8,9 @@ namespace SMEWebApps.Controllers
 {
     public class DashboardController : Controller
     {
-        
         public ActionResult Index()
         {
-
             return View();
         }
-
-
     }
 }
