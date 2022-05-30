@@ -12,7 +12,6 @@ namespace SMECommon
         public static string Version { get; private set; }
         public static string BaseURL { get; private set; }
         static AppSettings()
-
         {
             BaseURL = ConfigurationManager.AppSettings["BaseURL"];
             Version = ConfigurationManager.AppSettings["Version"];

@@ -167,9 +167,7 @@ namespace SMECommon
             {
                 HttpContext.Current.Session["CompanyName"] = value;
             }
-
         }
-
         public static string EmpDepartmentId
         {
             get
@@ -180,7 +178,6 @@ namespace SMECommon
             {
                 HttpContext.Current.Session["DepartmentId"] = value;
             }
-
         }
         public static string EmpDepartmentName
         {
