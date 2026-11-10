@@ -38,6 +38,6 @@ namespace SMEModel.LogIn
         public string ButtonId { get; set; }
         public string ButtonName { get; set; }
         public string Save { get; set; }
-        public string Update { get; set; }
+        public string Update { get; set;  }
     }
 }
